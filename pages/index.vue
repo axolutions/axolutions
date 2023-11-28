@@ -70,7 +70,5 @@
 </style>
 
 <script setup>
-const message = "batata";
-const whatsappUrl = "https://wa.me/5511983207820?" + encodeURIComponent(message);
 </script>
 
