@@ -3,12 +3,14 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   ssr: false,
   modules: ["@nuxt/ui", "@nuxt/image"],
+
   ui: {
     global: true,
   },
+
   css: ["@/assets/main.css"],
-  
+
   image: {
-    dir: 'assets/images',
-},
+    dir: "assets/images",
+  },
 });
