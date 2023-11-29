@@ -1,11 +1,11 @@
 <template>
   <LandingHeader></LandingHeader>
   <main>
-    <section class="conteudo-principal mt-12">
-      <h1 class="conteudo-principal-titulo text-5xl">
+    <section class="conteudo-principal mt-10 p-32 w-[70%]">
+      <h1 class="conteudo-principal-titulo text-6xl">
         A solução final para encantar os seus clientes.
       </h1>
-      <p class="conteudo-principal-subtitulo text-gray-300">
+      <p class="conteudo-principal-subtitulo text-gray-300 text-2xl w-[90%]">
         AxoChat oferece todas as ferramentas para gerenciar conversas,
         centralizar seu atendimento e aumentar seus lucros em um só lugar.
       </p>
@@ -17,13 +17,15 @@
           size="sm"
           color="primary"
           variant="solid"
+          class="p-6"
           label="Fale com um especialista"
           :trailing="false"
         />
         <UButton
           icon="i-heroicons-pencil-square"
           size="sm"
-          color="primary"
+          color="gray"
+          class="p-6"
           variant="solid"
           label="Conheça nossos planos"
           :trailing="false"
@@ -38,7 +40,7 @@
     <section
       class="relative w-full h-[90vh] flex justify-center bg-gradient-to-r from-gray-800 via-purple-800 to-primary-800 py-20 px-5 sm:p-28"
     >
-      <div class="flex flex-col items-center text-center sm:w-1/2  lg:w-1/2">
+      <div class="flex flex-col items-center text-center sm:w-1/2 lg:w-1/2">
         <div>
           <h1
             class="font-display text-4xl font-bold tracking-tight sm:text-5xl mb-4"
@@ -57,7 +59,7 @@
 
       <div class="absolute bottom-0 w-full overflow-hidden h-1/2">
         <NuxtImg
-          src="omnichannel.jpg"
+          src="https://www.chatwoot.com/images/home/omnichannel.webp"
           class="absolute w-[500px] h-[500px] sm:w-[600px] sm:h-[600px] md:h-[600px] lg:h-[600px] object-contain -bottom-[75%] left-1/2 -translate-x-1/2 z-10"
         />
       </div>
@@ -75,13 +77,8 @@ main {
   align-items: center;
 }
 
-#x {
-  height: 90vh;
-}
-
 .conteudo-principal {
   row-gap: 1em;
-  width: 50%;
   display: flex;
   justify-content: center;
   flex-direction: column;
