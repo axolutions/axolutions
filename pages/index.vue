@@ -1,5 +1,6 @@
 <template>
   <LandingHeader></LandingHeader>
+  <Stars></Stars>
   <main>
     <section class="conteudo-principal mt-10 p-32 w-[70%]">
       <h1 class="conteudo-principal-titulo text-6xl">
@@ -33,9 +34,6 @@
       </div>
     </section>
 
-    <section class="imagem-section">
-      <img src="~/assets/images/banner.jpg" class="imagem" />
-    </section>
 
     <section
       class="relative w-full h-[90vh] flex justify-center bg-gradient-to-r from-gray-800 via-purple-800 to-primary-800 py-20 px-5 sm:p-28"
@@ -65,6 +63,7 @@
       </div>
     </section>
   </main>
+
   <LandingFooter></LandingFooter>
 </template>
 
@@ -75,6 +74,9 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100%;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  overflow: hidden;
 }
 
 .conteudo-principal {
@@ -88,10 +90,10 @@ main {
 .conteudo-principal-titulo {
   text-align: center;
 }
+
 .conteudo-principal-subtitulo {
   text-align: center;
 }
-
 .conteudo-principal-btn {
   flex-wrap: wrap;
   display: flex;
@@ -100,6 +102,12 @@ main {
   justify-content: center;
   gap: 1em;
 }
+
+html {
+    height: 100%;
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    overflow: hidden;
+  }
 </style>
 
 <script setup></script>
