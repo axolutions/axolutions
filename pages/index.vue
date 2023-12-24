@@ -2,15 +2,15 @@
   <LandingHeader></LandingHeader>
   <Stars></Stars>
   <main>
-    <section class="conteudo-principal mt-10 p-32 w-[70%]">
-      <h1 class="conteudo-principal-titulo text-6xl">
-        A solução final para encantar os seus clientes.
-      </h1>
-      <p class="conteudo-principal-subtitulo text-gray-300 text-2xl w-[90%]">
-        AxoChat oferece todas as ferramentas para gerenciar conversas,
-        centralizar seu atendimento e aumentar seus lucros em um só lugar.
-      </p>
-      <div class="conteudo-principal-btn">
+    <section class="conteudo-principal">
+      <div class="texto-principal">
+        <h1 class="conteudo-principal-titulo">
+        AxoChat
+        </h1>
+        <p class="conteudo-principal-subtitulo">
+        A solução final para encantar os seus clientes. Oferecemos todas as ferramentas para gerenciar conversas, centralizar seu atendimento e aumentar seus lucros em um só lugar.
+        </p>
+        <div class="conteudo-principal-botoes">
         <UButton
           to="https://wa.me/5511981914677?"
           target="_blank"
@@ -31,10 +31,12 @@
           label="Conheça nossos planos"
           :trailing="false"
         />
+        </div>
+      </div>
+      <div class="imagem-principal">
+        <NuxtImg src="imagemprincipal.png"/>
       </div>
     </section>
-
-
     <section
       class="relative w-full h-[90vh] flex justify-center bg-gradient-to-r from-gray-800 via-purple-800 to-primary-800 py-20 px-5 sm:p-28"
     >
@@ -68,46 +70,47 @@
 </template>
 
 <style scoped>
+
 main {
-  gap: 3em;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 100%;
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-  overflow: hidden;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .conteudo-principal {
-  row-gap: 1em;
+  max-width: 80%;
+  margin-top: 4em;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
-.conteudo-principal-titulo {
-  text-align: center;
-}
-
-.conteudo-principal-subtitulo {
-  text-align: center;
-}
-.conteudo-principal-btn {
-  flex-wrap: wrap;
-  display: flex;
+  justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  margin-bottom: 6em;
+}
+
+.texto-principal {
+  display: flex;
+  flex-direction: column;
   gap: 1em;
 }
 
-html {
-    height: 100%;
-    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-    overflow: hidden;
-  }
+.conteudo-principal-titulo {
+  font-size: 78px;
+}
+.conteudo-principal-subtitulo {
+  font-size: 20px;
+  max-width: 90%;
+}
+
+.imagem-principal {
+  width: 100%;
+}
+
+.conteudo-principal-botoes{
+  display: flex;
+  gap: 2em;
+}
+
 </style>
 
 <script setup></script>
