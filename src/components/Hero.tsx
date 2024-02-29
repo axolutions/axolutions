@@ -5,7 +5,7 @@ import { buttonVariants } from "./ui/button";
 export const Hero = () => {
   return (
     <section className="container relative grid place-items-center py-20 md:py-32 gap-10">
-      <div className="text-center space-y-6 px-32" id='cachorrao'>
+      <div className="text-center space-y-6" id='cachorrao'>
         <main className="text-5xl md:text-6xl font-bold main-entrance">
           <h1 className="inline mt-10">
             A solução ideal para sua empresa:
