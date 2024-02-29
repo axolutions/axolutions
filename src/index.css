@@ -60,9 +60,7 @@ html {
     filter: blur(60px);
   }
 
-#about img{
-  display: none;
-}
+
 
   @keyframes shadow-slide {
     from {
@@ -113,7 +111,7 @@ section #statistics{
 }
 
 .main-entrance {
-  animation: fadeIn 0s ease-out forwards;
+  animation: fadeIn 1.5s ease-out forwards;
 }
 
 .primary-button {

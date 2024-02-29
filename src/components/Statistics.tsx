@@ -10,7 +10,7 @@ export const Statistics = () => {
       description: "Usuários",
     },
     {
-      quantity: "21",
+      quantity: "57",
       description: "Clientes",
     },
     {
@@ -18,7 +18,7 @@ export const Statistics = () => {
       description: "Colaboradores",
     },
     {
-      quantity: "19",
+      quantity: "62",
       description: "Projetos",
     },
   ];

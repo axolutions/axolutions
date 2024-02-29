@@ -23,7 +23,7 @@ export const About = () => {
                 nós
               </h2>
               <p className="text-xl text-muted-foreground mt-4">
-                Axolutions é uma consultoria de desenvolvimento de softwares inovadores, especializada em criar soluções de gerenciamento personalizadas e softwares de uso geral para empresas de todos os tamanhos.
+                Axolutions é a consultoria líder em desenvolvimento de softwares inovadores, especializada em criar soluções personalizadas para impulsionar a eficiência e o crescimento da sua empresa. Comprovadamente eficazes, nossas soluções são projetadas para aumentar a produtividade, reduzir custos operacionais e aprimorar a experiência do cliente. Entre em contato conosco e descubra como podemos ajudar a transformar o seu negócio.
               </p>
             </div>
 
