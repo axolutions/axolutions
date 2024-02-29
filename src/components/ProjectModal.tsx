@@ -23,7 +23,7 @@ export const ProjectModal = ({ feature }: Props) => {
       <CredenzaBody className="py-4">
         {/* Adjusted to display images in a single column */}
         <div className="flex flex-col gap-4">
-          {feature.additionalImages.map((image, index) => (
+          {feature!.additionalImages!.map((image, index) => (
             <img key={index} src={image} alt={`Additional feature ${index}`} className="w-full h-auto object-cover rounded" />
           ))}
         </div>

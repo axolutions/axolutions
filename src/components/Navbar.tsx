@@ -12,7 +12,6 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
@@ -90,14 +89,14 @@ export const Navbar = () => {
                       {label}
                     </a>
                   ))}
-                <a
-              href="https://wa.me/5511981914677?text=Ol%C3%A1,%20meu%20nome%20%C3%A9:"
-              target="_blank"
-              className={`border ${buttonVariants({ variant: "secondary" })}`}
-            >
-              <WhatsappIcon className="mr-5 w-5 h-5" height={100} width={100} />
-              <span className='ms-2'>Solucione seu problema</span>
-            </a>
+                  <a
+                    href="https://wa.me/5511981914677?text=Ol%C3%A1,%20meu%20nome%20%C3%A9:"
+                    target="_blank"
+                    className={`border ${buttonVariants({ variant: "secondary" })}`}
+                  >
+                    <WhatsappIcon />
+                    <span className='ms-2'>Solucione seu problema</span>
+                  </a>
                 </nav>
               </SheetContent>
             </Sheet>
@@ -125,7 +124,7 @@ export const Navbar = () => {
               target="_blank"
               className={`border ${buttonVariants({ variant: "secondary" })}`}
             >
-              <WhatsappIcon className="mr-5 w-5 h-5" height={100} width={100} />
+              <WhatsappIcon />
               <span className='ms-2'>Entre em contato</span>
             </a>
           </div>

@@ -1,15 +1,12 @@
 import {
   Card,
   CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
 } from "@/components/ui/card";
 import AxoChatImage from "../assets/axochat.png";
 import AxoChatImage2 from "../assets/axochat2.png";
 import { ProjectModal } from "./ProjectModal";
 import { CredenzaTrigger, Credenza } from "./ui/credenza";
-import { ReactComponentElement, useState } from "react";
+import { useState } from "react";
 import AxoShopImage from '../assets/axoshop1.png'
 import AxoShopImage2 from '../assets/axoshop2.png'
 import PetusImage from '../assets/petus1.png'
