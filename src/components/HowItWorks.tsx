@@ -9,27 +9,27 @@ interface FeatureProps {
 const features: FeatureProps[] = [
   {
     icon: <MedalIcon />,
-    title: "1. Primeiro contato",
+    title: "1. Captando sua necessidade",
     description:
-      "Entedemos exatamente o que sua empresa precisa afim de alcançar suas metas e objetivos. Além de oferecer soluções personalizadas que se alinham perfeitamente às necessidades específicas do seu negócio."
+      "Entendemos suas metas e objetivos para fornecer soluções personalizadas que atendam às necessidades exclusivas de sua empresa."
   },
   {
     icon: <MapIcon />,
-    title: "2. Processo criativo",
+    title: "2. Planejamento estratégico ",
     description:
-      "A partir da análise inicial, damos início ao processo criativo para desenvolver uma solução exclusiva. Com uma abordagem criativa para inovar e diferenciar sua marca, desenvolvendo conceitos originais que capturam a essência do seu negócio e engajam seu público-alvo."
+      "Utilizamos uma abordagem criativa para desenvolver soluções únicas que diferenciam sua marca e envolvem seu público-alvo."
   },
   {
     icon: <PlaneIcon />,
-    title: "3. Execução",
+    title: "3. Executando com eficiência",
     description:
-      "Implementamos as estratégias definidas, utilizando tecnologias de ponta e as melhores práticas para garantir que o desenvolvimento do projeto esteja alinhado com os objetivos estabelecidos e promova o crescimento sustentável do seu negócio."
+      "Implementamos estratégias utilizando tecnologias avançadas e as melhores práticas para desenvolver o melhor sistema para sua empresa."
   },
   {
     icon: <GiftIcon />,
-    title: "4. Solução entregue",
+    title: "4. Aprovação e refinamento",
     description:
-      "Finalizado a execução, enviamos o software desenvolvido para a sua aprovação. Após aprovação e refinamento, deixamos seu sistema no ar, pronto para impressionar os seus clientes."
+      "Após a implementação, enviamos o software para sua aprovação, realizando ajustes conforme necessário, garantindo a satisfação do cliente."
   },
 ];
 
@@ -47,7 +47,7 @@ export const HowItWorks = () => {
 
       </h2>
       <p className="md:w-3/4 mx-auto mt-4 mb-8 text-xl text-muted-foreground">
-        Nosso modo de trabalho é dividio em quatro pilares:
+        Nosso modo de trabalho é dividido em quatro pilares:
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

@@ -44,7 +44,7 @@ const routeList: RouteProps[] = [
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
-    <header className="sticky border-b-[1px] top-0 z-40 w-full bg-white dark:bg-background mb-10">
+    <header className="navbar sticky border-b-[1px] top-0 z-40 w-full bg-white dark:bg-background mb-10">
       <NavigationMenu className="mx-auto">
         <NavigationMenuList className="container h-14 px-4 w-screen flex justify-between items-center">
           <NavigationMenuItem className="font-bold flex">
@@ -71,8 +71,8 @@ export const Navbar = () => {
                   <span className="sr-only">Menu Icon</span>
                 </Menu>
               </SheetTrigger>
-
-              <SheetContent side={"left"}>
+            <div className="mobileNavbar">
+              <SheetContent className="mobileNavbar" side={"left"}>
                 <SheetHeader>
                   <SheetTitle className="font-bold text-xl">
                     Axolutions
@@ -99,6 +99,7 @@ export const Navbar = () => {
                   </a>
                 </nav>
               </SheetContent>
+            </div>
             </Sheet>
           </span>
 

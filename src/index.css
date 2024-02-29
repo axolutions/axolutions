@@ -4,12 +4,22 @@ html {
 
 
 /* HeroCards background shadow */
+
+#cachorrao {
+  z-index: 10 !important;
+}
+
+.mobileNavbar{
+  z-index: 1000!important;
+}
+
 .fecristo {
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 0;
 }
+
 
 .shadow {
   position: absolute;
@@ -22,6 +32,10 @@ html {
   height: 400px;
   filter: blur(150px);
   animation: shadow-slide infinite 3s linear alternate;
+}
+
+.loud {
+align-items: center;
 }
 
 @keyframes shadow-slide {

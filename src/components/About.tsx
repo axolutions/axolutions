@@ -8,7 +8,7 @@ export const About = () => {
       className="container py-24 sm:py-32"
     >
       <div className="bg-muted/50 border rounded-lg py-12">
-        <div className="px-6 flex flex-col-reverse md:flex-row gap-8 md:gap-12">
+        <div className="px-6 flex flex-col-reverse md:flex-row gap-8 md:gap-12 loud">
           <img
             src={pilot}
             alt=""
@@ -23,8 +23,13 @@ export const About = () => {
                 nós
               </h2>
               <p className="text-xl text-muted-foreground mt-4">
-                Axolutions é a consultoria líder em desenvolvimento de softwares inovadores, especializada em criar soluções personalizadas para impulsionar a eficiência e o crescimento da sua empresa. Comprovadamente eficazes, nossas soluções são projetadas para aumentar a produtividade, reduzir custos operacionais e aprimorar a experiência do cliente. Entre em contato conosco e descubra como podemos ajudar a transformar o seu negócio.
+                Axolutions é a principal consultoria em desenvolvimento de softwares inovadores.Especializados em soluções personalizadas, estamos comprometidos em impulsionar a eficiência e o crescimento de sua empresa. Comprovadamente eficazes, nossas soluções são projetadas para aumentar a produtividade, reduzir custos operacionais e aprimorar a experiência do seu cliente.
               </p>
+              <br/>
+              <p className="text-xl text-muted-foreground mt-4">
+                Nosso time de especialistas está pronto para entender suas necessidades e oferecer soluções sob medida que transformarão seu negócio. Entre em contato conosco hoje mesmo e descubra como podemos ajudar você a alcançar seus objetivos.
+              </p>
+              <br/>
             </div>
 
             <Statistics />

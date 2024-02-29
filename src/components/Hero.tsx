@@ -19,7 +19,7 @@ export const Hero = () => {
 
 
         <p className="text-xl text-muted-foreground lg:mx-0">
-          Soluções personalizadas e inovadoras para o seu negócio.
+          Softwares personalizados e inovadores para impulsionar o seu negócio.
         </p>
 
         <div className="space-y-4 md:space-y-0 md:space-x-4 ">
@@ -36,7 +36,7 @@ export const Hero = () => {
               variant: "outline",
             })}`}
           >
-            Nosso portifólio
+            Conheça nosso portifólio
           </a>
         </div>
       </div>
