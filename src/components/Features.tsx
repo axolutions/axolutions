@@ -38,15 +38,14 @@ const features: FeatureProps[] = [
 ];
 
 const featureList: string[] = [
-  "Tema Escuro/Claro",
-  "Avaliações",
-  "Funcionalidades",
+  "Personalização Ilimitada",
+  "Integração com Redes Sociais",
+  "Segurança Avançada",
   "Preços",
-  "Formulário de Contato",
-  "Nossa Equipe",
+  "Análise de Dados em Tempo Real",
+  "Backup Automático",
   "Design Responsivo",
-  "Newsletter",
-  "Minimalista",
+  "Experiência do Usuário Intuitiva",
 ];
 
 export const Features = () => {
