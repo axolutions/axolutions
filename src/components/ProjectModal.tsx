@@ -15,7 +15,7 @@ interface Props {
 
 export const ProjectModal = ({ feature }: Props) => {
   return (
-    <CredenzaContent className="mx-auto p-5">
+    <CredenzaContent className="mx-auto p-5 max-h-screen">
       <CredenzaHeader className="border-b pb-4">
         <CredenzaTitle className="text-2xl font-bold ">{feature.title}</CredenzaTitle>
         <CredenzaDescription className="text-gray-400 mt-2">{feature.shortDescription}</CredenzaDescription>

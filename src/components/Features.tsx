@@ -20,32 +20,36 @@ const features: FeatureProps[] = [
   {
     title: "Design Responsivo",
     description:
-      "A adaptação fluída a qualquer tamanho de tela, garantindo uma experiência de usuário impecável em dispositivos móveis e desktops.",
+      "Desfrute de uma navegação fluída em qualquer tela, proporcionando uma experiência do usuário perfeita em smartphones, tablets e computadores.",
     image: image4,
   },
   {
     title: "Interface Intuitiva",
     description:
-      "Desenvolvemos interfaces que facilitam a interação do usuário, melhorando a usabilidade e a experiência geral com o software.",
+      "Criamos interfaces intuitivas para simplificar a interação do usuário, aprimorando a usabilidade e tornando a experiência mais eficiente e agradável.",
     image: image3,
   },
   {
     title: "Insights Impulsionados por IA",
     description:
-      "Utilize o poder da inteligência artificial para obter insights valiosos, melhorar a tomada de decisões e otimizar processos.",
+      "Explore o potencial da inteligência artificial para obter insights valiosos, melhorar a tomada de decisões e otimizar os processos da sua empresa.",
     image: image,
   },
 ];
 
 const featureList: string[] = [
-  "Personalização Ilimitada",
-  "Integração com Redes Sociais",
-  "Segurança Avançada",
-  "Preços",
-  "Análise de Dados em Tempo Real",
-  "Backup Automático",
-  "Design Responsivo",
-  "Experiência do Usuário Intuitiva",
+  "Personalização ilimitada",
+  "Integração com redes sociais",
+  "Segurança avançada",
+  "SEO integrado",
+  "Análise de dados em tempo real",
+  "Backup automático",
+  "Preços abaixo do mercado",
+  "Design responsivo",
+  "Experiência do usuário intuitiva",
+  "Integração com plataformas de pagamento",
+  "Suporte 24/7",
+  "Armazenamento em nuvem",
 ];
 
 export const Features = () => {
@@ -68,7 +72,7 @@ export const Features = () => {
               variant="secondary"
               className="text-sm"
             >
-              {feature}
+            {feature}
             </Badge>
           </div>
         ))}
