@@ -29,7 +29,7 @@ export const Statistics = () => {
         {stats.map(({ quantity, description }: statsProps) => (
           <div
             key={description}
-            className="space-y-2 text-center"
+            className="space-y-2 text-center gap-10"
           >
             <h2 className="text-3xl sm:text-4xl font-bold ">{quantity}</h2>
             <p className="text-xl text-muted-foreground">{description}</p>
