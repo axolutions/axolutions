@@ -2,11 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   ssr: false,
-  modules: ["@nuxt/ui", "@nuxt/image"],
-
-  ui: {
-    global: true,
-  },
+  modules: ["@nuxt/image", "@nuxtjs/tailwindcss"],
 
   css: ["@/assets/main.css"],
 

@@ -1,6 +1,6 @@
 export default defineAppConfig({
   ui: {
-    global: true,
+    // global: true,
     primary: "violet",
     gray: "zync",
   },
