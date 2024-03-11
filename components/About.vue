@@ -1,7 +1,27 @@
 <template>
-  <div class="relative pt-16 bg-zync-500 pt-20">
+  <div class="relative pt-40 bg-zync-500">
     <div
-      class="rounded-md bg-white-950 ring-1 ring-white/10 lg:rounded-2xl text-purple from-white to-zinc-500 bg-zync-500"
+      class="pointer-events-none absolute -top-36 left-1/2 h-[32rem] w-full -translate-x-1/2 -translate-y-1/2 overflow-hidden lg:w-[60rem]"
+      id="tsparticles"
+    >
+      <canvas
+        style="
+          width: 100% !important;
+          height: 100% !important;
+          position: fixed !important;
+          z-index: 0 !important;
+          top: 0px !important;
+          left: 0px !important;
+          pointer-events: none;
+        "
+        data-generated="false"
+        aria-hidden="true"
+        width="364"
+        height="512"
+      ></canvas>
+    </div>
+    <div
+      class="rounded-md bg-white-950 ring-1 ring-white/10 lg:rounded-2xl text-purple from-white to-white bg-zync-500"
       :style="{ opacity: 1, backgroundColor: '#111317' }"
     >
       <div class="bg-muted/50 rounded-lg py-12">
@@ -16,16 +36,13 @@
               justifyContent: 'center',
             }"
           >
-            <NuxtImg
-              src="logo.png"
-              class="w-[70px] object-contain rounded-lg"
-            />
+            <NuxtImg src="ra.png" class="w-[70px] object-contain rounded-lg" />
           </div>
 
           <div class="bg-green-0 flex flex-col justify-between">
             <div>
               <h2 class="text-3xl font-bold text-zinc-400">
-                <span class="text-zinc-400"
+                <span class="text-zinc-200"
                   >Sobre
                   <span
                     class="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-purple-900"
@@ -37,7 +54,7 @@
               <hr
                 class="border-0 h-[1px] my-6 mx- bg-gradient-to-r from-purple-400 via-purple-500 to-purple-900"
               />
-              <p class="text-xl text-zinc-400 mt-4">
+              <p class="text-xl text-zinc-300 mt-4">
                 Axolutions é a principal consultoria em desenvolvimento de
                 softwares inovadores. Especializados em soluções personalizadas,
                 estamos comprometidos em impulsionar a eficiência e o
@@ -46,6 +63,30 @@
                 custos operacionais e aprimorar a experiência do seu cliente.
               </p>
               <br />
+              <p class="text-xl text-zinc-300 mt-4">
+                Nosso time de especialistas está pronto para entender suas necessidades e oferecer soluções sob medida que transformarão seu negócio. Entre em contato conosco hoje mesmo e descubra como podemos ajudar você a alcançar seus objetivos.
+              </p>
+              <br>
+              <section id="statistics">
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-zinc-200">
+                  <div class="space-y-2 text-center">
+                    <h2 class="text-3xl sm:text-4xl font-bold">2.7K+</h2>
+                    <p class="text-xl text-muted-foreground">Usuários</p>
+                  </div>
+                  <div class="space-y-2 text-center">
+                    <h2 class="text-3xl sm:text-4xl font-bold">57</h2>
+                    <p class="text-xl text-muted-foreground">Clientes</p>
+                  </div>
+                  <div class="space-y-2 text-center">
+                    <h2 class="text-3xl sm:text-4xl font-bold">16</h2>
+                    <p class="text-xl text-muted-foreground">Colaboradores</p>
+                  </div>
+                  <div class="space-y-2 text-center">
+                    <h2 class="text-3xl sm:text-4xl font-bold">62</h2>
+                    <p class="text-xl text-muted-foreground">Projetos</p>
+                  </div>
+                </div>
+              </section>
             </div>
           </div>
         </div>

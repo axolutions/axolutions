@@ -7,15 +7,13 @@
       <div
         class="pr-8 text-4xl/[1.07] font-bold tracking-tight md:pr-16 md:text-5xl/[1.07]"
       >
-        <span
-          class="bg-gradient-to-br from-white to-zinc-500 bg-clip-text text-transparent"
-          >Who said finance has to be
-          <span
-            class="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-purple-900"
-          >
-            cachorrão viado
+        <span class="bg-gradient-to-br from-white to-zinc-500 bg-clip-text text-transparent">
+          Como
+          <span class="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-purple-900">
+            trabalhamos
           </span>
         </span>
+        <p class="md:w-3/4 mx-auto mt-4 mb-8 text-xl text-zinc-400">Nosso modo de trabalho é dividido em quatro pilares:</p>
       </div>
       <div class="text-lg text-zinc-400/80">
         With Cobalt, managing your business finances is effortless, empowering,

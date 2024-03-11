@@ -3,11 +3,12 @@
     <div className="relative flex justify-center">
       <div className="mx-4 w-full max-w-7xl">
         <nav
-          className="flex min-h-[5rem] items-center justify-between px-4 py-3"
+          className="flex min-h-[1rem] items-center justify-between"
           aria-label="Global"
         >
           <div className="flex lg:flex-1">
             <a href="/"> </a>
+            <NuxtImg src="logo.png" className="h-14 mt-4" />
           </div>
           <div
             className="flex flex-1 items-center justify-end space-x-4 text-sm font-medium text-zinc-300 transition hover:text-zinc-100 sm:space-x-6"
@@ -23,7 +24,7 @@
             >
               <span className="absolute inset-0 overflow-hidden rounded-full">
                 <span
-                  className="absolute inset-0 rounded-full bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(248,103,103,0.6)_0%,rgba(248,10,10,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+                  className="absolute inset-0 rounded-full bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(148,0,211,0.6)_0%,rgba(75,0,130,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100"
                 ></span>
               </span>
               <div
@@ -41,10 +42,3 @@
     </div>
   </header>
 </template>
-
-<script setup lang="ts">
-import FadeTransition from "~/components/ui/transitions/FadeTransition.vue";
-import Home from "~/components/views/Home.vue";
-
-const height = ref(`${window.innerHeight}px`);
-</script>
