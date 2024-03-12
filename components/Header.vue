@@ -1,5 +1,5 @@
 <template>
-  <header className="absolute inset-x-0 top-0 z-10">
+  <header className="absolute inset-x-0 top-0 z-10 mt-2">
     <div className="relative flex justify-center">
       <div className="mx-4 w-full max-w-7xl">
         <nav
@@ -8,7 +8,7 @@
         >
           <div className="flex lg:flex-1">
             <a href="/"> </a>
-            <NuxtImg src="logo.png" className="h-14 mt-4" />
+            <NuxtImg src="ra.png" className="h-14"/>
           </div>
           <div
             className="flex flex-1 items-center justify-end space-x-4 text-sm font-medium text-zinc-300 transition hover:text-zinc-100 sm:space-x-6"

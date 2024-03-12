@@ -1,31 +1,4 @@
 <template>
-  <section
-    id="intro"
-    class="mt-20 mx-auto max-w-7xl p-6 py-16 md:py-24 lg:px-8"
-  >
-    <div class="grid items-start justify-between gap-5 md:grid-cols-2">
-      <div
-        class="pr-8 text-4xl/[1.07] font-bold tracking-tight md:pr-16 md:text-5xl/[1.07]"
-      >
-        <span class="bg-gradient-to-br from-white to-zinc-500 bg-clip-text text-transparent">
-          Como
-          <span class="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-purple-900">
-            trabalhamos
-          </span>
-        </span>
-        <p class="md:w-3/4 mx-auto mt-4 mb-8 text-xl text-zinc-400">Nosso modo de trabalho é dividido em quatro pilares:</p>
-      </div>
-      <div class="text-lg text-zinc-400/80">
-        With Cobalt, managing your business finances is effortless, empowering,
-        and anything but boring. Our intuitive platform brings clarity to your
-        cash flow, simplifies your financial decision-making, and puts the power
-        of advanced financial management right at your fingertips.<!-- -->
-        <span class="text-zinc-200"
-          >Say no to spreadsheets and tools designed in the 80s.</span
-        >
-      </div>
-    </div>
-  </section>
 
   <section class="mx-auto max-w-7xl p-6 py-16 md:py-24 lg:px-8">
     <div class="grid max-w-xl items-start justify-between gap-5">

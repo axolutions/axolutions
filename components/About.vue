@@ -54,7 +54,7 @@
               <hr
                 class="border-0 h-[1px] my-6 mx- bg-gradient-to-r from-purple-400 via-purple-500 to-purple-900"
               />
-              <p class="text-xl text-zinc-300 mt-4">
+              <p class="text-xl text-zinc-300 mt-4 textAbout">
                 Axolutions é a principal consultoria em desenvolvimento de
                 softwares inovadores. Especializados em soluções personalizadas,
                 estamos comprometidos em impulsionar a eficiência e o
@@ -63,7 +63,7 @@
                 custos operacionais e aprimorar a experiência do seu cliente.
               </p>
               <br />
-              <p class="text-xl text-zinc-300 mt-4">
+              <p class="text-xl text-zinc-300 mt-4 textAbout">
                 Nosso time de especialistas está pronto para entender suas necessidades e oferecer soluções sob medida que transformarão seu negócio. Entre em contato conosco hoje mesmo e descubra como podemos ajudar você a alcançar seus objetivos.
               </p>
               <br>
@@ -105,3 +105,15 @@
     </div>
   </div>
 </template>
+
+<style scoped>
+  #statistics {
+    margin-top: 2rem;
+  }
+  @media (max-width: 768px){
+
+    .textAbout {
+      font-size: 19px;
+    }
+  }
+</style>
