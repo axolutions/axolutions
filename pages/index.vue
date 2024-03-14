@@ -42,5 +42,9 @@ useHead({
     },
   ],
 });
+
+useHead({
+  meta: [{ name: "google-site-verification", content: "1e69nYjG8QUAiBFyU1-U90EiyCHOTy4lqEOcUIS1af4" }],
+});
 </script>
 <style></style>
