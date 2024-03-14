@@ -147,7 +147,6 @@ const onLoad = (container: Container) => {
 #tsparticles {
   height: 80vh;
   opacity: 0; /* Start from transparent */
-  animation: fadeIn 0.5 ease forwards; /* Use forwards to retain the final state after the animation ends */
   z-index: -1;
 }
 
