@@ -67,7 +67,7 @@
           Se inscreva na nossa newsletter!
         </h2>
         <p class="mx-auto mt-6 max-w-xl text-lg text-zinc-400/80">
-          Fique por dentro de todas as novidades do mundoc
+          Fique por dentro de todas as novidades do mundo da tecnologia.
         </p>
         <div class="mt-12 flex items-center justify-center">
           <button
