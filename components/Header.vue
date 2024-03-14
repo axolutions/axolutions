@@ -8,12 +8,13 @@
         >
           <div className="flex lg:flex-1">
             <a href="/"> </a>
-            <NuxtImg src="ra.png" className="h-14"/>
+            <NuxtImg src="ra.png" class="h-14 sm:hidden" />
+            <NuxtImg src="logo.png" class="h-14 hidden sm:block" />
           </div>
           <div
             className="flex flex-1 items-center justify-end space-x-4 text-sm font-medium text-zinc-300 transition hover:text-zinc-100 sm:space-x-6"
           >
-            <a href="/blog">Portifolio</a>
+            <a href="/blog">Portfólio.</a>
             <button
               className="group relative rounded-full p-px text-sm/6 text-zinc-400 duration-300 hover:text-zinc-100 hover:shadow-glow"
               type="button"
