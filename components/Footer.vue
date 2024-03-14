@@ -71,7 +71,7 @@
         ></a>
       </div>
       <div
-        class="mt-8 flex items-center gap-4 text-xs font-medium leading-5 text-zinc-400 max-md:flex-col md:order-1 md:mt-0"
+        class="mt-8 flex items-center gap-4 text-xs font-medium leading-5 text-zinc-100 max-md:flex-col md:order-1 md:mt-0"
       >
         <div class="order-2 md:order-1">
           <p class="">
@@ -83,7 +83,7 @@
       </div>
     </div>
     <div
-      class="mt-4 w-full text-xs leading-5 text-zinc-500 max-md:text-center md:max-w-[60%]"
+      class="mt-4 w-full text-xs leading-5 text-zinc-200 max-md:text-center md:max-w-[60%]"
     >
       <p>
         Axolutions é uma start-up especializada em desenvolver softwares personalizados, sites aprimorados com UI/UX, sistemas de gestão, landing pages de alta conversão, sistemas de atendimento e muito mais. Tem um projeto e precisa de freelancer? Conte com a axolutions e tenha uma solução personalizada e inovadora.
