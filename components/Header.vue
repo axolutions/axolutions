@@ -14,7 +14,7 @@
           <div
             class="flex flex-1 items-center justify-end space-x-4 text-sm font-medium text-zinc-300 transition hover:text-zinc-100 sm:space-x-6"
           >
-            <a href="#projects">Portifólio.</a>
+            <a href="#projects">Projetos</a>
             <button
               class="group relative rounded-full p-px text-sm/6 text-zinc-400 duration-300 hover:text-zinc-100 hover:shadow-glow"
               type="button"
@@ -31,8 +31,8 @@
               <div
                 class="relative z-10 rounded-full bg-zinc-950 px-4 py-1.5 ring-1 ring-white/10"
               >
-                <a href="https://wa.me/5511981914677?text=Ol%C3%A1,%20meu%20nome%20%C3%A9:">
-                  Entre em contato!
+                <a class="flex items-center gap-3" href="https://wa.me/5511981914677?text=Ol%C3%A1,%20meu%20nome%20%C3%A9:">
+                  Entre em contato
                 </a>
               </div>
               <span

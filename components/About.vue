@@ -1,5 +1,5 @@
 <template>
-  <div class="relative pt-40 bg-zync-500">
+  <div class="relative bg-zync-500 ">
     <div
       class="rounded-md bg-white-950 ring-1 ring-white/10 lg:rounded-2xl text-purple from-white to-white bg-zync-500"
       :style="{ opacity: 1, backgroundColor: '#111317' }"

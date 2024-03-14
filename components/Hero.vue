@@ -1,13 +1,13 @@
 <template>
-  <div class="relative mx-auto max-w-3xl text-center">
+  <div class="relative text-center hero flex flex-col items-center justify-center ">
     <h1
-      class="bg-gradient-to-br from-white to-white bg-clip-text text-5xl/[1.07] font-bold tracking-tight text-transparent md:text-7xl/[1.07]"
+      class="bg-gradient-to-br from-white to-zinc-300 bg-clip-text text-5xl/[1.07] font-bold tracking-tight text-transparent md:text-7xl/[1.07]"
       style="transform: none"
     >
       A solução ideal para sua empresa:
       <br />
       <span
-        class="inline bg-gradient-to-r from-[#c875df] via-[#d456f7] to-[#590570] bg-clip-text"
+        class="inline bg-gradient-to-r from-[#b970db] via-[#d456f7] to-[#8d23aa] bg-clip-text"
         >Axolutions
       </span>
     </h1>
@@ -30,12 +30,13 @@
             ></span>
           </span>
           <div
-            class="relative z-10 rounded-full bg-zinc-950 px-4 py-1.5 ring-1 ring-white/10"
+            class="relative z-10 rounded-full bg-zinc-950 px-4 py-1.5 ring-1 ring-white/10 text-lg "
           >
             <a
-              href="https://wa.me/5511981914677?text=Ol%C3%A1,%20meu%20nome%20%C3%A9:"
+              href="https://wa.me/5511981914677?text=Ol%C3%A1,%20meu%20nome%20%C3%A9:" class="flex items-center gap-2"
             >
-              Solucione sua necessidade
+              <icon name="akar-icons:whatsapp-fill" color="" class="pb-0"/>
+              Entre em contato
             </a>
           </div>
           <span
@@ -43,8 +44,8 @@
           ></span>
         </button>
       </div>
-      <div class="group" style="opacity: 1">
-        <a class="flex flex-col items-center gap-1" href="/#intro"
+      <div class="group hidden sm:block" style="opacity: 1 ">
+        <a class="flex flex-col items-center gap-1 " href="/#intro"
           ><p
             class="text-sm/6 text-zinc-400 duration-300 group-hover:text-zinc-100"
           >
@@ -77,25 +78,7 @@
         @load="onLoad"
       ></NuxtParticles>
 
-      <div class="relative" style="transform: none">
-        <div
-          class="absolute -top-px right-20 h-2 w-20 [mask-image:linear-gradient(to_right,rgba(217,217,217,0)_0%,#d9d9d9_25%,#d9d9d9_75%,rgba(217,217,217,0)_100%)] md:w-32 lg:w-64"
-        >
-          <div
-            class="h-px w-full animate-starlight-right bg-gradient-to-r from-cyan-400/0 via-violet-400 to-violet-400/0"
-          ></div>
-        </div>
-        <div
-          class="rounded-md bg-zinc-950 ring-1 ring-white/10 lg:rounded-2xl"
-        ></div>
-        <div
-          class="absolute -bottom-2 left-20 h-2 w-20 [mask-image:linear-gradient(to_right,rgba(217,217,217,0)_0%,#d9d9d9_25%,#d9d9d9_75%,rgba(217,217,217,0)_100%)] md:w-32 lg:w-64"
-        >
-          <div
-            class="h-px w-full animate-starlight-left bg-gradient-to-r from-violet-400/0 via-violet-400 to-violet-400/0"
-          ></div>
-        </div>
-      </div>
+
     </div>
   </div>
 </template>
@@ -144,6 +127,16 @@ const onLoad = (container: Container) => {
 </script>
 
 <style>
+@media only screen and (max-width: 767px) {
+.hero{
+  height: 90vh !important;
+}
+
+}
+.hero{
+  height: 100vh;
+}
+
 #tsparticles {
   height: 80vh;
   opacity: 0; /* Start from transparent */

@@ -1,102 +1,83 @@
 <template>
   <section class="mx-auto max-w-7xl p-6 py-16 md:py-24 lg:px-8" id="projects">
-    <div class="grid max-w-xl items-start justify-between gap-5">
+    <div class="text-center">
       <div class="text-4xl/[1.07] font-bold tracking-tight md:text-5xl/[1.07]">
         <span
           class="bg-gradient-to-br from-white to-zinc-500 bg-clip-text text-transparent"
-          >Everything you need. <br />
+          >Conheça nossos <br />
           <span
             class="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-purple-900"
           >
-            projects
+            projetos
           </span></span
         >
       </div>
-
-      <div class="text-lg text-zinc-400/80">
-        Financial management and visibility in one place. Experience<!-- -->
-        <span class="text-zinc-200">a flexible toolkit</span> that makes every
-        task feel like a breeze.
-      </div>
     </div>
 
-    <div class="mt-16 grid grid-cols-6 gap-4 lg:grid-cols-12 lg:gap-6 xl:gap-8">
+    <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-6 lg:gap-8">
       <div
-        class="order-1 col-span-full flex h-[480px] flex-col overflow-hidden rounded-2xl bg-zinc-900/50 ring-1 ring-zinc-100/10 md:col-span-3 lg:col-span-5 xl:col-span-4"
+        class="flex flex-col overflow-hidden rounded-2xl bg-zinc-900/50 ring-1 ring-zinc-100/10 hover:transform hover:scale-105 hover:transition duration-300 cursor-pointer"
       >
-        <div
-          class="relative mb-4 flex h-full w-full items-center justify-center overflow-hidden [mask:linear-gradient(black_70%,transparent)]"
-        >
-          <div
-            class="relative -z-10 h-full w-full [mask:linear-gradient(to_left,transparent,black_150%)]"
-          ></div>
-        </div>
-        <div class="mt-auto w-full space-y-4 px-8 pb-8">
-          <h3 class="text-lg/none font-medium text-zinc-200">
-            Insights at your fingertips
+        <NuxtImg src="/axochat.png" class="mb-8 " />
+        <div class="w-full space-y-4 px-8 pb-8">
+          <h3 class="text-lg/none font-medium text-zinc-200 text-center">
+            AxoChat
           </h3>
-          <p class="max-w-sm text-sm text-zinc-400/80">
-            All your data and finances in one place to provide quick answers and
-            make decisions instantly.
+          <p class="max-w-sm text-base text-zinc-400/80">
+            O sistema de atendimento multiplataforma mais eficiente do mercado.
+            Centralizamos todos os seus atendimentos para garantir rapidez e
+            eficiência aos seus clientes, oferecendo um Chat-Bot com
+            inteligência artifical, relatórios personalizados e diversas
+            ferramentas para elevar a qualidade do seu atendimento a um próximo
+            nível.
           </p>
         </div>
       </div>
-
       <div
-        class="order-2 col-span-full flex h-[480px] flex-col overflow-hidden rounded-2xl bg-zinc-900/50 ring-1 ring-zinc-100/10 md:col-span-3 lg:col-span-7 xl:col-span-4"
+        class="flex flex-col overflow-hidden rounded-2xl bg-zinc-900/50 ring-1 ring-zinc-100/10 hover:transform hover:scale-105 hover:transition duration-300 cursor-pointer"
       >
-        <div class="mt-auto w-full space-y-4 px-8 pb-8">
-          <h3 class="text-lg/none font-medium text-zinc-200">
-            Manage in real time
+        <NuxtImg src="/petus.png" class="mb-8" />
+        <div class="w-full space-y-4 px-8 pb-8">
+          <h3 class="text-lg/none font-medium text-zinc-200 text-center">
+            AxoVet
           </h3>
-          <p class="max-w-md text-sm text-zinc-400/80 xl:max-w-sm">
-            Have full control of your business finances on the go using our
-            iOS/Android mobile apps. Because, you know, it’s 2023.
+          <p class="max-w-sm text-base text-zinc-400/80">
+            O melhor ERP de gestão veterinária. Com a AxoVet, você gerencia toda
+            a sua empresa de forma integrada e eficiente. Além de cadastro de
+            clientes e animais egestão de atendimento, aproveite recursos como
+            dashboards gerados com I.A, emissão de notas fiscais, internação e
+            muitas outras funcionalidades. Eleve o nível de sua gestão com a
+            AxoVet.
           </p>
         </div>
       </div>
-
       <div
-        class="order-3 col-span-full flex h-[480px] flex-col overflow-hidden rounded-2xl bg-zinc-900/50 ring-1 ring-zinc-100/10 md:order-4 md:col-span-3 lg:col-span-5 xl:order-3 xl:col-span-4"
+        class="flex flex-col overflow-hidden rounded-2xl bg-zinc-900/50 ring-1 ring-zinc-100/10 hover:transform hover:scale-105 hover:transition duration-300 cursor-pointer"
       >
-        <div
-          class="mb-4 h-full w-full overflow-hidden [mask:linear-gradient(transparent,black,transparent)]"
-        ></div>
+        <NuxtImg src="/axoshop.png" class="mb-8" />
         <div class="mt-auto w-full space-y-4 px-8 pb-8">
-          <h3 class="text-lg/none font-medium text-zinc-200">
-            Important business alerts
+          <h3 class="text-lg/none font-medium text-zinc-200 text-center">
+            AxoShop
           </h3>
-          <p class="max-w-sm text-sm text-zinc-400/80">
-            Choose the alerts you need and receive them via email, mobile or
-            Slack. Review and take action in one click.
+          <p class="max-w-sm text-base text-zinc-400/80">
+            AxoShop, o e-commerce personalizável mais completo do
+            mercado. Oferecemos uma solução completa para o seu comércio,
+            incluindo catálogo com filtros avançados, coleções personalizadas,
+            formulários de contato, lista de desejos, carrinho de compras e
+            módulo de pagamento integrado. Transforme sua loja virtual com o AxoShop.
           </p>
         </div>
       </div>
-
       <div
-        class="order-4 col-span-full flex h-[480px] flex-col overflow-hidden rounded-2xl bg-zinc-900/50 ring-1 ring-zinc-100/10 md:order-5 xl:order-4 xl:col-span-7"
+        class="flex flex-col overflow-hidden rounded-2xl bg-zinc-900/50 ring-1 ring-zinc-100/10 hover:transform hover:scale-105 hover:transition duration-300 cursor-pointer"
       >
+        <NuxtImg src="/axobot.png" class="mb-8" />
         <div class="mt-auto w-full space-y-4 px-8 pb-8">
-          <h3 class="text-lg/none font-medium text-zinc-200">
-            Connect all your apps
+          <h3 class="text-lg/none font-medium text-zinc-200 text-center">
+            AxoBot
           </h3>
-          <p class="max-w-md text-sm text-zinc-400/80 xl:max-w-sm">
-            Bring your data with our built-in integrations for accounting,
-            revenue tools and banking.
-          </p>
-        </div>
-      </div>
-
-      <div
-        class="order-5 col-span-full flex h-[480px] flex-col overflow-hidden rounded-2xl bg-zinc-900/50 ring-1 ring-zinc-100/10 md:order-3 md:col-span-3 lg:col-span-7 xl:order-5 xl:col-span-5"
-      >
-        <div class="mt-auto w-full space-y-4 px-8 pb-8">
-          <h3 class="text-lg/none font-medium text-zinc-200">
-            You’re in control
-          </h3>
-          <p class="max-w-sm text-sm text-zinc-400/80">
-            Lightning fast. Shortcuts for everything. Command+K on Mac, Ctrl+K
-            on Windows. Dark mode.
+          <p class="max-w-sm text-base text-zinc-400/80">
+            Introduzindo o AxoBot, a inteligência artificial definitiva para otimizar suas operações diárias. O AxoBot não é apenas um assistente virtual comum; é um parceiro de negócios que revoluciona a forma como você gerencia suas tarefas diárias. Podendo ser integrado em qualquer aplicativo, pode ser usado para responder seus clientes, gerar relatórios, analisar dados e montar estratégias de negócio completas!
           </p>
         </div>
       </div>

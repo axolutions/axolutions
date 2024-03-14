@@ -64,10 +64,10 @@
         <h2
           class="bg-gradient-to-br from-zinc-100 to-zinc-600 bg-clip-text text-3xl font-bold tracking-tight text-transparent sm:text-4xl"
         >
-          Se inscreva na nossa newsletter!
+          Tem alguma dúvida?
         </h2>
-        <p class="mx-auto mt-6 max-w-xl text-lg text-zinc-400/80">
-          Fique por dentro de todas as novidades do mundo da tecnologia.
+        <p class="mx-auto mt-6 max-w-xl text-lg text-zinc-300">
+          Fale conosco agora mesmo! Teremos prazer em responder suas dúvidas.
         </p>
         <div class="mt-12 flex items-center justify-center">
           <button
@@ -84,9 +84,15 @@
               ></span
             ></span>
             <div
-              class="relative z-10 rounded-full bg-zinc-950 px-4 py-1.5 ring-1 ring-white/10"
+              class="relative z-10 rounded-full bg-zinc-950 px-4 py-1.5 ring-1 ring-white/10 text-lg"
             >
-              Join the waitlist
+              <a
+                href="https://wa.me/5511981914677?text=Ol%C3%A1,%20meu%20nome%20%C3%A9:"
+                class="flex items-center gap-2"
+              >
+                <icon name="akar-icons:whatsapp-fill" color="" class="pb-0" />
+                Entre em contato
+              </a>
             </div>
             <span
               class="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-violet-400/0 via-violet-400/90 to-violet-400/0 transition-opacity duration-500 group-hover:opacity-40"
@@ -97,7 +103,7 @@
     </div>
   </section>
 
-  <footer class="isolate mx-auto max-w-7xl  pt-16 lg:px-8">
+  <footer class="isolate mx-auto max-w-7xl pt-16 lg:px-8">
     <div
       class="border-t border-white/10 pt-4 md:flex md:items-center md:justify-between"
     >
@@ -184,7 +190,11 @@
       class="mt-4 w-full text-xs leading-5 text-zinc-300 max-md:text-center md:max-w-[60%]"
     >
       <p>
-        Axolutions é uma start-up especializada em desenvolver softwares personalizados, sites aprimorados com UI/UX, sistemas de gestão, landing pages de alta conversão, sistemas de atendimento e muito mais. Tem um projeto e precisa de freelancer? Conte com a axolutions e tenha uma solução personalizada e inovadora.
+        Axolutions é uma start-up especializada em desenvolver softwares
+        personalizados, sites aprimorados com UI/UX, sistemas de gestão, landing
+        pages de alta conversão, sistemas de atendimento e muito mais. Tem um
+        projeto e precisa de freelancer? Conte com a axolutions e tenha uma
+        solução personalizada e inovadora.
       </p>
     </div>
   </footer>
