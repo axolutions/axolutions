@@ -1,6 +1,6 @@
 <template>
 
-  <section class="mx-auto max-w-7xl p-6 py-16 md:py-24 lg:px-8">
+  <section class="mx-auto max-w-7xl p-6 py-16 md:py-24 lg:px-8" id="projects">
     <div class="grid max-w-xl items-start justify-between gap-5">
       <div class="text-4xl/[1.07] font-bold tracking-tight md:text-5xl/[1.07]">
         <span

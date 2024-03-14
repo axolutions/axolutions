@@ -24,11 +24,9 @@
               :style="{ opacity: 1, backgroundColor: '#111317' }"
             >
               <div class="timeline-content">
-                <h1>1. Compreendendo sua necessidade: </h1>
+                <h1>1. Entendemos suas necessidades </h1>
                 <p>
-                  Começamos nosso projeto captando suas metas e objetivos para fornecer soluções
-                  personalizadas que atendam às necessidades exclusivas da sua
-                  empresa, aumentando sua relevância no mercado.
+                  Nossa abordagem personalizada começa com uma profunda compreensão de suas metas e objetivos para garantir soluções sob medida que impulsionam o seu sucesso e aumentam sua relevância no mercado, melhorando seu ranking em mecanismos de buscas.
                 </p>
               </div>
               <div
@@ -48,9 +46,9 @@
               :style="{ opacity: 1, backgroundColor: '#111317' }"
             >
               <div class="timeline-content">
-                <h1>2. Planejamento estrtégico: </h1>
+                <h1>2. Planejamento estratégico </h1>
                 <p>
-                  Utilizamos uma abordagem criativa para desenvolver um sistema que diferencie sua marca, aumentando sua visibilidade e envolva seu público-alvo, além de melhorar seu ranking em mecanismos de buscas.
+                  Colocamos a criatividade em ação para desenvolver um sistema inovador. Nosso planejamento estratégico leva em consideração seus objetivos e desafios, garantindo soluções quue aumentam sua visibilidade e envolvem seu público-alvo.
                 </p>
               </div>
               <div
@@ -70,11 +68,9 @@
               :style="{ opacity: 1, backgroundColor: '#111317' }"
             >
               <div class="timeline-content">
-                <h1>3. Executando com eficiência: </h1>
+                <h1>3. Desenvolvimento do software </h1>
                 <p>
-                  Implementamos estratégias utilizando tecnologias avançadas e
-                  as melhores práticas para desenvolver o melhor sistema para
-                  sua empresa, buscando sempre otimizar a performance e a eficiência.
+                  Nossa equipe altamente qualificada executa o desenvolvimento do seu projeto com eficiência e excelência. Utilizamos tecnologias avançadas e as melhores práticas para garantir resultados de alta qualidade que impulsionam o seu negócio.
                 </p>
               </div>
               <div
@@ -96,9 +92,7 @@
               <div class="timeline-content">
                 <h1>4. Aprovação e refinamento</h1>
                 <p>
-                  Após a implementação, enviamos o software para sua aprovação,
-                  realizando ajustes conforme necessário, garantindo a
-                  satisfação do cliente.
+                  Após o desenvolvimento, entregamos soluções prontas para o sucesso. Nossa dedicação à excelência e à satisfação do cliente garante que você receba resultados concretos que superam as expectativas. Seu sucesso é a nossa prioridade.
                 </p>
               </div>
               <div
@@ -147,10 +141,12 @@
   font-size: 25px;
   line-height: 30px;
   margin-bottom: 10px;
+   text-align: center;
+    margin-bottom: 1em;
+    color: #bd9ad8;
+    font-weight: bold;
 }
-.timeline-content p {
 
-}
 .timeline-content .date {
   font-size: 12px;
   font-weight: 300;
@@ -158,6 +154,17 @@
   letter-spacing: 2px;
 }
 @media only screen and (min-width: 880px) {
+
+  .timeline-content h1{
+    text-align: center;
+    margin-bottom: 1em;
+    color: #bd9ad8;
+    font-weight: bold;
+  }
+
+ .timeline-content p{
+    text-align: center;
+  }
   .timeline:before {
     content: "";
     position: absolute;
@@ -169,6 +176,7 @@
     background-color: #8f8f8f;
   }
   .timeline ul li {
+    padding:40px;
     width: 50%;
     position: relative;
     margin-bottom: 20px;

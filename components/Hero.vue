@@ -58,9 +58,89 @@
             class="text-zinc-400 duration-300 group-hover:translate-y-1.5 group-hover:text-zinc-100"
           >
             <path d="M12 5v14"></path>
-            <path d="m19 12-7 7-7-7"></path></svg>
+            <path d="m19 12-7 7-7-7"></path>
+          </svg>
         </a>
+      </div>
+    </div>
+
+    <div class="perspective-[1500px] relative pt-16" style="opacity: 1">
+      <NuxtParticles
+        id="tsparticles"
+        :options="options"
+        class="pointer-events-none absolute -top-36 left-1/2 h-[32rem] w-full -translate-x-1/2 -translate-y-1/2 overflow-hidden lg:w-[60rem]"
+        @load="onLoad"
+      ></NuxtParticles>
+
+      <div class="relative" style="transform: none">
+        <div
+          class="absolute -top-px right-20 h-2 w-20 [mask-image:linear-gradient(to_right,rgba(217,217,217,0)_0%,#d9d9d9_25%,#d9d9d9_75%,rgba(217,217,217,0)_100%)] md:w-32 lg:w-64"
+        >
+          <div
+            class="h-px w-full animate-starlight-right bg-gradient-to-r from-cyan-400/0 via-cyan-400 to-cyan-400/0"
+          ></div>
+        </div>
+        <div
+          class="rounded-md bg-zinc-950 ring-1 ring-white/10 lg:rounded-2xl"
+        ></div>
+        <div
+          class="absolute -bottom-2 left-20 h-2 w-20 [mask-image:linear-gradient(to_right,rgba(217,217,217,0)_0%,#d9d9d9_25%,#d9d9d9_75%,rgba(217,217,217,0)_100%)] md:w-32 lg:w-64"
+        >
+          <div
+            class="h-px w-full animate-starlight-left bg-gradient-to-r from-cyan-400/0 via-cyan-400 to-cyan-400/0"
+          ></div>
+        </div>
       </div>
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import { Container } from "tsparticles-engine";
+const options = ref({
+  fpsLimit: 60,
+  interactivity: {
+    modes: {
+      push: { quantity: 8 },
+    },
+  },
+  particles: {
+    color: { value: "#ffffff" },
+    number: {
+      density: {
+        enable: true,
+        area: 900,
+      },
+      value: 90,
+    },
+    opacity: {
+      animation: {},
+      value: {
+        min: 0,
+        max: 0.5,
+      },
+    },
+    shape: {
+      type: "circle",
+    },
+    size: {
+      value: { min: 1, max: 1.9 },
+    },
+    move: {
+      direction: "top",
+      enable: true,
+      speed: 0.8,
+    },
+  },
+});
+
+const onLoad = (container: Container) => {
+  container.play();
+};
+</script>
+
+<style>
+#tsparticles {
+  height: 2300vh;
+}
+</style>
