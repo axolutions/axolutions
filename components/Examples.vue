@@ -8,7 +8,7 @@
           <span
             class="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-purple-900"
           >
-            cachorrão viado
+axolutions
           </span></span
         >
       </div>

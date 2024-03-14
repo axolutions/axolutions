@@ -1,5 +1,4 @@
 <template>
-
   <section class="mx-auto max-w-7xl p-6 py-16 md:py-24 lg:px-8" id="projects">
     <div class="grid max-w-xl items-start justify-between gap-5">
       <div class="text-4xl/[1.07] font-bold tracking-tight md:text-5xl/[1.07]">
@@ -9,7 +8,7 @@
           <span
             class="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-purple-900"
           >
-            cachorrão viado
+            projects
           </span></span
         >
       </div>
@@ -521,33 +520,9 @@
               data-nimg="1"
               style="color: transparent"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
-              srcset="
-                /_next/image?url=%2F_static%2Fhand.png&amp;w=256&amp;q=75   256w,
-                /_next/image?url=%2F_static%2Fhand.png&amp;w=384&amp;q=75   384w,
-                /_next/image?url=%2F_static%2Fhand.png&amp;w=640&amp;q=75   640w,
-                /_next/image?url=%2F_static%2Fhand.png&amp;w=750&amp;q=75   750w,
-                /_next/image?url=%2F_static%2Fhand.png&amp;w=828&amp;q=75   828w,
-                /_next/image?url=%2F_static%2Fhand.png&amp;w=1080&amp;q=75 1080w,
-                /_next/image?url=%2F_static%2Fhand.png&amp;w=1200&amp;q=75 1200w,
-                /_next/image?url=%2F_static%2Fhand.png&amp;w=1920&amp;q=75 1920w,
-                /_next/image?url=%2F_static%2Fhand.png&amp;w=2048&amp;q=75 2048w,
-                /_next/image?url=%2F_static%2Fhand.png&amp;w=3840&amp;q=75 3840w
-              "
-              src="/_next/image?url=%2F_static%2Fhand.png&amp;w=3840&amp;q=75"
             />
           </div>
-          <div class="h-full">
-            <img
-              alt="Mobile app"
-              loading="lazy"
-              width="163"
-              height="335"
-              decoding="async"
-              data-nimg="1"
-              style="color: transparent"
-              src="/_static/mobile-app.svg"
-            />
-          </div>
+          <div class="h-full"></div>
         </div>
         <div class="mt-auto w-full space-y-4 px-8 pb-8">
           <h3 class="text-lg/none font-medium text-zinc-200">
@@ -1387,55 +1362,7 @@
           </div>
           <div
             class="absolute -left-16 bottom-10 h-[243px] w-[891px] sm:-left-12 lg:left-8"
-          >
-            <img
-              alt="Keyboard"
-              loading="lazy"
-              width="891"
-              height="243"
-              decoding="async"
-              data-nimg="1"
-              class="absolute z-10 hidden h-full w-full lg:block"
-              style="color: transparent"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
-              srcset="
-                /_next/image?url=%2F_static%2Fkeys.png&amp;w=256&amp;q=75   256w,
-                /_next/image?url=%2F_static%2Fkeys.png&amp;w=384&amp;q=75   384w,
-                /_next/image?url=%2F_static%2Fkeys.png&amp;w=640&amp;q=75   640w,
-                /_next/image?url=%2F_static%2Fkeys.png&amp;w=750&amp;q=75   750w,
-                /_next/image?url=%2F_static%2Fkeys.png&amp;w=828&amp;q=75   828w,
-                /_next/image?url=%2F_static%2Fkeys.png&amp;w=1080&amp;q=75 1080w,
-                /_next/image?url=%2F_static%2Fkeys.png&amp;w=1200&amp;q=75 1200w,
-                /_next/image?url=%2F_static%2Fkeys.png&amp;w=1920&amp;q=75 1920w,
-                /_next/image?url=%2F_static%2Fkeys.png&amp;w=2048&amp;q=75 2048w,
-                /_next/image?url=%2F_static%2Fkeys.png&amp;w=3840&amp;q=75 3840w
-              "
-              src="/_next/image?url=%2F_static%2Fkeys.png&amp;w=3840&amp;q=75"
-            /><img
-              alt="Keyboard"
-              loading="lazy"
-              width="891"
-              height="243"
-              decoding="async"
-              data-nimg="1"
-              class="absolute h-full w-full"
-              style="color: transparent"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
-              srcset="
-                /_next/image?url=%2F_static%2Fkeyboard.png&amp;w=256&amp;q=75   256w,
-                /_next/image?url=%2F_static%2Fkeyboard.png&amp;w=384&amp;q=75   384w,
-                /_next/image?url=%2F_static%2Fkeyboard.png&amp;w=640&amp;q=75   640w,
-                /_next/image?url=%2F_static%2Fkeyboard.png&amp;w=750&amp;q=75   750w,
-                /_next/image?url=%2F_static%2Fkeyboard.png&amp;w=828&amp;q=75   828w,
-                /_next/image?url=%2F_static%2Fkeyboard.png&amp;w=1080&amp;q=75 1080w,
-                /_next/image?url=%2F_static%2Fkeyboard.png&amp;w=1200&amp;q=75 1200w,
-                /_next/image?url=%2F_static%2Fkeyboard.png&amp;w=1920&amp;q=75 1920w,
-                /_next/image?url=%2F_static%2Fkeyboard.png&amp;w=2048&amp;q=75 2048w,
-                /_next/image?url=%2F_static%2Fkeyboard.png&amp;w=3840&amp;q=75 3840w
-              "
-              src="/_next/image?url=%2F_static%2Fkeyboard.png&amp;w=3840&amp;q=75"
-            />
-          </div>
+          ></div>
         </div>
         <div class="mt-auto w-full space-y-4 px-8 pb-8">
           <h3 class="text-lg/none font-medium text-zinc-200">
