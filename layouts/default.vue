@@ -4,13 +4,13 @@
   </div>
 </template>
 
-
 <style>
 #root {
   background: "#fdf";
 }
+html {
+  scroll-behavior: smooth;
+}
 </style>
 
-
-<script>
-</script>
+<script></script>

@@ -77,19 +77,8 @@
           <p class="">
             ©
             <!-- -->2023<!-- -->
-            Cobalt Financial Technologies Inc.
+            Axolutions Ltda.
           </p>
-        </div>
-        <div class="order-1 flex gap-4 md:order-2">
-          <a
-            class="transition-colors duration-200 hover:text-zinc-300"
-            href="/legal/privacy"
-            >Privacy Policy</a
-          ><a
-            class="transition-colors duration-200 hover:text-zinc-300"
-            href="/legal/terms"
-            >Terms of Use</a
-          >
         </div>
       </div>
     </div>
@@ -97,10 +86,7 @@
       class="mt-4 w-full text-xs leading-5 text-zinc-500 max-md:text-center md:max-w-[60%]"
     >
       <p>
-        Cobalt is a trademark or registered trademark of Cobalt Financial
-        Technologies Inc. Any other trademarks are the property of their
-        respective owners. Unless otherwise noted, use of third party logos does
-        not imply endorsement of, sponsorship of, or affiliation with Cobalt.
+        Axolutions é uma start-up especializada em desenvolver softwares personalizados, sitesaprimorados com UI/UX,sistemas de ge
       </p>
       <p class="mt-2">
         Cobalt is a financial technology company, not a bank. Banking services

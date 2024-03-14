@@ -8,6 +8,9 @@ export default <Partial<Config>>{
         primary: {
           DEFAULT: "#09090B",
         },
+        axo: {
+          DEFAULT: "#9611FE",
+        },
       },
     },
   },

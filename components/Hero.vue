@@ -1,8 +1,8 @@
 <template>
   <div class="relative mx-auto max-w-3xl text-center">
     <h1
-      class="bg-gradient-to-br from-white to-white bg-clip-text text-5xl/[1.07] font-bold tracking-tight text-transparent md:text-7xl/[1.07]"
-      style="opacity: 1; transform: none"
+      class="transition-opacity duration-1000 bg-gradient-to-br from-white to-white bg-clip-text text-5xl/[1.07] font-bold tracking-tight text-transparent md:text-7xl/[1.07] opacity-0 hover:opacity-100"
+      style="transform: none"
     >
       A solução ideal para sua empresa:
       <br />
@@ -11,6 +11,7 @@
         >Axolutions
       </span>
     </h1>
+
     <p
       class="mt-6 text-lg font-medium text-zinc-200 md:text-xl"
       style="opacity: 1"
@@ -31,12 +32,14 @@
           <div
             class="relative z-10 rounded-full bg-zinc-950 px-4 py-1.5 ring-1 ring-white/10"
           >
-            <a href="https://wa.me/5511981914677?text=Ol%C3%A1,%20meu%20nome%20%C3%A9:">
+            <a
+              href="https://wa.me/5511981914677?text=Ol%C3%A1,%20meu%20nome%20%C3%A9:"
+            >
               Solucione sua necessidade
             </a>
           </div>
           <span
-            class="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-cyan-400/0 via-violet-400/90 to-cyan-400/0 transition-opacity duration-500 group-hover:opacity-40"
+            class="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-violet-400/0 via-violet-400/90 to-violet-400/0 transition-opacity duration-500 group-hover:opacity-40"
           ></span>
         </button>
       </div>
@@ -79,7 +82,7 @@
           class="absolute -top-px right-20 h-2 w-20 [mask-image:linear-gradient(to_right,rgba(217,217,217,0)_0%,#d9d9d9_25%,#d9d9d9_75%,rgba(217,217,217,0)_100%)] md:w-32 lg:w-64"
         >
           <div
-            class="h-px w-full animate-starlight-right bg-gradient-to-r from-cyan-400/0 via-cyan-400 to-cyan-400/0"
+            class="h-px w-full animate-starlight-right bg-gradient-to-r from-cyan-400/0 via-violet-400 to-violet-400/0"
           ></div>
         </div>
         <div
@@ -89,7 +92,7 @@
           class="absolute -bottom-2 left-20 h-2 w-20 [mask-image:linear-gradient(to_right,rgba(217,217,217,0)_0%,#d9d9d9_25%,#d9d9d9_75%,rgba(217,217,217,0)_100%)] md:w-32 lg:w-64"
         >
           <div
-            class="h-px w-full animate-starlight-left bg-gradient-to-r from-cyan-400/0 via-cyan-400 to-cyan-400/0"
+            class="h-px w-full animate-starlight-left bg-gradient-to-r from-violet-400/0 via-violet-400 to-violet-400/0"
           ></div>
         </div>
       </div>
@@ -100,7 +103,7 @@
 <script setup lang="ts">
 import { Container } from "tsparticles-engine";
 const options = ref({
-  fpsLimit: 60,
+  fpsLimit: 30,
   interactivity: {
     modes: {
       push: { quantity: 8 },
@@ -113,10 +116,9 @@ const options = ref({
         enable: true,
         area: 900,
       },
-      value: 90,
+      value: 190,
     },
     opacity: {
-      animation: {},
       value: {
         min: 0,
         max: 0.5,
@@ -131,7 +133,7 @@ const options = ref({
     move: {
       direction: "top",
       enable: true,
-      speed: 0.8,
+      speed: 2, // Increased speed for faster particle movement
     },
   },
 });
@@ -143,6 +145,18 @@ const onLoad = (container: Container) => {
 
 <style>
 #tsparticles {
-  height: 2300vh;
+  height: 80vh;
+  opacity: 0; /* Start from transparent */
+  animation: fadeIn 0.5 ease forwards; /* Use forwards to retain the final state after the animation ends */
+}
+
+/* Define the keyframes for the fadeIn animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 </style>
