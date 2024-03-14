@@ -1,13 +1,13 @@
 <template>
   <div class="relative mx-auto max-w-3xl text-center">
     <h1
-      class="transition-opacity duration-1000 bg-gradient-to-br from-white to-white bg-clip-text text-5xl/[1.07] font-bold tracking-tight text-transparent md:text-7xl/[1.07] opacity-0 hover:opacity-100"
+      class="bg-gradient-to-br from-white to-white bg-clip-text text-5xl/[1.07] font-bold tracking-tight text-transparent md:text-7xl/[1.07]"
       style="transform: none"
     >
       A solução ideal para sua empresa:
       <br />
       <span
-        class="animate-bounce inline bg-gradient-to-r from-[#c875df] via-[#d456f7] to-[#590570] text-transparent bg-clip-text"
+        class="inline bg-gradient-to-r from-[#c875df] via-[#d456f7] to-[#590570] bg-clip-text"
         >Axolutions
       </span>
     </h1>
@@ -114,7 +114,7 @@ const options = ref({
     number: {
       density: {
         enable: true,
-        area: 900,
+        area: 1400,
       },
       value: 190,
     },
@@ -148,6 +148,7 @@ const onLoad = (container: Container) => {
   height: 80vh;
   opacity: 0; /* Start from transparent */
   animation: fadeIn 0.5 ease forwards; /* Use forwards to retain the final state after the animation ends */
+  z-index: -1;
 }
 
 /* Define the keyframes for the fadeIn animation */

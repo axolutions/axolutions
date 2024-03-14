@@ -64,11 +64,10 @@
         <h2
           class="bg-gradient-to-br from-zinc-100 to-zinc-600 bg-clip-text text-3xl font-bold tracking-tight text-transparent sm:text-4xl"
         >
-          See where financial automation can take your business.
+          Se inscreva na nossa newsletter!
         </h2>
         <p class="mx-auto mt-6 max-w-xl text-lg text-zinc-400/80">
-          The first financial tool you'll love. And the last one you'll ever
-          need.
+          Fique por dentro de todas as novidades do mundoc
         </p>
         <div class="mt-12 flex items-center justify-center">
           <button

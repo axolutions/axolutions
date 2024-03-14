@@ -86,11 +86,7 @@
       class="mt-4 w-full text-xs leading-5 text-zinc-500 max-md:text-center md:max-w-[60%]"
     >
       <p>
-        Axolutions é uma start-up especializada em desenvolver softwares personalizados, sitesaprimorados com UI/UX,sistemas de ge
-      </p>
-      <p class="mt-2">
-        Cobalt is a financial technology company, not a bank. Banking services
-        are provided by Celtic Bank and Evolve Bank &amp; Trust®, Members FDIC.
+        Axolutions é uma start-up especializada em desenvolver softwares personalizados, sites aprimorados com UI/UX, sistemas de gestão, landing pages de alta conversão, sistemas de atendimento e muito mais. Tem um projeto e precisa de freelancer? Conte com a axolutions e tenha uma solução personalizada e inovadora.
       </p>
     </div>
   </footer>
