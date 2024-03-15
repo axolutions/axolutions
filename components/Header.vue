@@ -8,8 +8,8 @@
         >
           <div class="flex lg:flex-1">
             <a href="/"> </a>
-            <NuxtImg src="ra.png" class="h-14 sm:hidden" />
-            <NuxtImg src="logo.png" class="h-14 hidden sm:block" />
+            <img src="~/assets/images/ra.png" class="h-14 sm:hidden" />
+            <img src="~/assets/images/logo.png" class="h-14 hidden sm:block" />
           </div>
           <div
             class="flex flex-1 items-center justify-end space-x-4 text-sm font-medium text-zinc-300 transition hover:text-zinc-100 sm:space-x-6"
