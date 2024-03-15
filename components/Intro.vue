@@ -18,7 +18,7 @@
       <div
         class="flex flex-col overflow-hidden rounded-2xl bg-zinc-900/50 ring-1 ring-zinc-100/10 hover:transform hover:scale-105 hover:transition duration-300 cursor-pointer"
       >
-        <NuxtImg src="/axochat.png" class="mb-8 " />
+        <img src="~/assets/images/axochat.png" class="mb-8">
         <div class="w-full space-y-4 px-8 pb-8">
           <h3 class="text-lg/none font-medium text-zinc-200 text-center">
             AxoChat
@@ -36,7 +36,7 @@
       <div
         class="flex flex-col overflow-hidden rounded-2xl bg-zinc-900/50 ring-1 ring-zinc-100/10 hover:transform hover:scale-105 hover:transition duration-300 cursor-pointer"
       >
-        <NuxtImg src="/petus.png" class="mb-8" />
+        <img src="~/assets/images/petus.png" class="mb-8">
         <div class="w-full space-y-4 px-8 pb-8">
           <h3 class="text-lg/none font-medium text-zinc-200 text-center">
             AxoVet
@@ -54,7 +54,7 @@
       <div
         class="flex flex-col overflow-hidden rounded-2xl bg-zinc-900/50 ring-1 ring-zinc-100/10 hover:transform hover:scale-105 hover:transition duration-300 cursor-pointer"
       >
-        <NuxtImg src="/axoshop.png" class="mb-8" />
+          <img src="~/assets/images/axoshop.png" class="mb-8">
         <div class="mt-auto w-full space-y-4 px-8 pb-8">
           <h3 class="text-lg/none font-medium text-zinc-200 text-center">
             AxoShop
@@ -71,7 +71,7 @@
       <div
         class="flex flex-col overflow-hidden rounded-2xl bg-zinc-900/50 ring-1 ring-zinc-100/10 hover:transform hover:scale-105 hover:transition duration-300 cursor-pointer"
       >
-        <NuxtImg src="/axobot.png" class="mb-8" />
+          <img src="~/assets/images/axobot.png" class="mb-8">
         <div class="mt-auto w-full space-y-4 px-8 pb-8">
           <h3 class="text-lg/none font-medium text-zinc-200 text-center">
             AxoBot

@@ -16,7 +16,8 @@
               justifyContent: 'center',
             }"
           >
-            <NuxtImg src="ra.png" class="w-[70px] object-contain rounded-lg" />
+            <img src="~/assets/images/ra.png" class="w-[70px] object-contain rounded-lg" >
+
           </div>
 
           <div class="bg-green-0 flex flex-col justify-between">
