@@ -112,9 +112,39 @@
       </div>
     </div>
   </section>
+
+  <div class="section-banner">
+</div>
+
 </template>
 
 <style scoped>
+
+.section-banner{
+  display: none;
+  height: 800px;
+  width: 850px;
+  position: relative;
+  transition: left 0.3s linear;
+  background: url("https://www.queens.ox.ac.uk/wp-content/uploads/2022/10/iStock-1303551046-scaled.jpg");
+  background-size: cover;
+  background-position: left;
+  bottom: 0px;
+  border-radius: 50%;
+  animation: earthRotate 30s linear 0s infinite;
+  box-shadow: 0px 0 20px RGBA(255, 255, 255, 0.2), -5px 0px 8px #c3f4ff18 inset,
+    15px 2px 25px #00000056 inset, -24px -2px 34px #c3f4ff99 inset,
+    250px 0px 44px #0000000a inset, 150px 0px 38px #0000001a inset;
+}
+@keyframes earthRotate {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 400px 0;
+  }
+}
+
 .container {
   display: flex;
   align-items: center;

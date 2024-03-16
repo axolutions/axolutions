@@ -31,7 +31,10 @@
               <div
                 class="relative z-10 rounded-full bg-zinc-950 px-4 py-1.5 ring-1 ring-white/10"
               >
-                <a class="flex items-center gap-3" href="https://wa.me/5511981914677?text=Ol%C3%A1,%20meu%20nome%20%C3%A9:">
+                <a
+                  class="flex items-center gap-3"
+                  href="https://wa.me/5511981914677?text=Ol%C3%A1,%20meu%20nome%20%C3%A9:"
+                >
                   Entre em contato
                 </a>
               </div>
