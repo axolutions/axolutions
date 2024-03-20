@@ -1,5 +1,7 @@
 <template>
-  <div class="relative text-center hero flex flex-col items-center justify-center ">
+  <div
+    class="relative text-center hero flex flex-col items-center justify-center"
+  >
     <h1
       class="bg-gradient-to-br from-white to-zinc-300 bg-clip-text text-5xl/[1.07] font-bold tracking-tight text-transparent md:text-7xl/[1.07]"
       style="transform: none"
@@ -30,12 +32,13 @@
             ></span>
           </span>
           <div
-            class="relative z-10 rounded-full bg-zinc-950 px-4 py-1.5 ring-1 ring-white/10 text-lg "
+            class="relative z-10 rounded-full bg-zinc-950 px-4 py-1.5 ring-1 ring-white/10 text-lg"
           >
             <a
-              href="https://wa.me/5511981914677?text=Ol%C3%A1,%20meu%20nome%20%C3%A9:" class="flex items-center gap-2"
+              href="https://wa.me/5511981914677?text=Ol%C3%A1,%20meu%20nome%20%C3%A9:"
+              class="flex items-center gap-2"
             >
-              <icon name="akar-icons:whatsapp-fill" color="" class="pb-0"/>
+              <icon name="akar-icons:whatsapp-fill" color="" class="pb-0" />
               Entre em contato
             </a>
           </div>
@@ -44,8 +47,8 @@
           ></span>
         </button>
       </div>
-      <div class="group hidden sm:block" style="opacity: 1 ">
-        <a class="flex flex-col items-center gap-1 " href="/#intro"
+      <div class="group hidden sm:block" style="opacity: 1">
+        <a class="flex flex-col items-center gap-1" href="/#intro"
           ><p
             class="text-sm/6 text-zinc-400 duration-300 group-hover:text-zinc-100"
           >
@@ -76,9 +79,7 @@
         :options="options"
         class="pointer-events-none absolute -top-36 left-1/2 h-[32rem] w-full -translate-x-1/2 -translate-y-1/2 overflow-hidden lg:w-[60rem]"
         @load="onLoad"
-      ></NuxtParticles>
-
-
+      />
     </div>
   </div>
 </template>
@@ -128,19 +129,16 @@ const onLoad = (container: Container) => {
 
 <style>
 @media only screen and (max-width: 767px) {
-.hero{
-  height: 90vh !important;
+  .hero {
+    height: 90vh !important;
+  }
 }
-
-}
-.hero{
+.hero {
   height: 100vh;
 }
 
 #tsparticles {
   height: 80vh;
-  opacity: 0; /* Start from transparent */
-  z-index: -1;
 }
 
 /* Define the keyframes for the fadeIn animation */

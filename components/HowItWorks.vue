@@ -130,11 +130,50 @@
       </div>
     </div>
   </section>
+
+  <div class="section-banner">
+</div>
+
 </template>
 
 <style scoped>
-.timeline-content p {
-  font-size: 16px;
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.timeline {
+  position: relative;
+}
+
+.timeline ul {
+  list-style: none;
+}
+.timeline ul li {
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+.timeline ul li:last-child {
+  margin-bottom: 0;
+}
+.timeline-content h1 {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 10px;
+   text-align: center;
+    margin-bottom: 1em;
+    color: #bd9ad8;
+    font-weight: bold;
+}
+
+.timeline-content .date {
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
 }
 @media only screen and (min-width: 880px) {
   .timeline-content h1 {
