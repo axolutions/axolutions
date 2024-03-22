@@ -1,5 +1,20 @@
 <template>
-  <section id="intro" class="mt-20 mx-auto max-w-7xl py-16 md:py-24 lg:px-8">
+  <section id="intro" class=" mx-auto max-w-7xl py-16 md:py-24 lg:px-8">
+    <div class="text-center">
+      <div
+        class="text-4xl/[1.07] font-bold tracking-tight md:text-5xl/[1.07] mb-20"
+      >
+        <span
+          class="bg-gradient-to-br from-white to-zinc-500 bg-clip-text text-transparent"
+          >Descubra
+          <span
+            class="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-purple-900"
+          >
+            como trabalhamos
+          </span>
+        </span>
+      </div>
+    </div>
     <div class="flex justify-center">
       <div class="container flex items-center justify-center">
         <div class="timeline relative">
