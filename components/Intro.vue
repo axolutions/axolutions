@@ -20,7 +20,7 @@
         :key="project.id"
         class="group flex flex-col overflow-hidden rounded-xl bg-zinc-900 shadow-lg transition duration-300 ease-out transform hover:-translate-y-2 hover:shadow-2xl cursor-pointer"
       >
-        <NuxtImg
+        <img
           class="object-cover w-full h-48 group-hover:opacity-75"
           :src="project.imageUrl"
           :alt="project.title"
@@ -50,28 +50,28 @@ export default defineComponent({
           title: "AxoChat",
           description:
             "Centralizamos todos os seus atendimentos para garantir rapidez e eficiência, com um Chat-Bot inteligente e relatórios personalizados.",
-          imageUrl: "axochat.png",
+          imageUrl: "/_nuxt/assets/images/axochat.png",
         },
         {
           id: "axovet",
           title: "AxoVet",
           description:
             "O melhor ERP de gestão veterinária. Com a AxoVet, você gerencia toda a sua empresa de forma integrada e eficiente.",
-          imageUrl: "petus.png",
+          imageUrl: "/_nuxt/assets/images/petus.png",
         },
         {
           id: "axoshop",
           title: "AxoShop",
           description:
             "Transforme sua loja virtual com o AxoShop, o e-commerce personalizável mais completo do mercado.",
-          imageUrl: "axoshop.png",
+          imageUrl: "/_nuxt/assets/images/axoshop.png",
         },
         {
           id: "axobot",
           title: "AxoBot",
           description:
             "Introduzindo o AxoBot, a inteligência artificial definitiva para otimizar suas operações diárias.",
-          imageUrl: "axobot.png",
+          imageUrl: "/_nuxt/assets/images/axobot.png",
         },
         // Add more projects as needed
       ] as Project[],
