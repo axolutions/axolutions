@@ -15,22 +15,75 @@
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-6 lg:gap-8">
+      <!-- AxoChat Project -->
       <div
-        v-for="project in projects"
-        :key="project.id"
         class="group flex flex-col overflow-hidden rounded-xl bg-zinc-900 shadow-lg transition duration-300 ease-out transform hover:-translate-y-2 hover:shadow-2xl cursor-pointer"
       >
         <img
           class="object-cover w-full h-48 group-hover:opacity-75"
-          :src="project.imageUrl"
-          :alt="project.title"
+          src="~/assets/images/axochat.png"
+          alt="AxoChat"
         />
-
         <div class="flex flex-col justify-between p-6 space-y-4">
-          <h3 class="text-2xl font-semibold text-center">
-            {{ project.title }}
-          </h3>
-          <p class="text-sm text-gray-300">{{ project.description }}</p>
+          <h3 class="text-2xl font-semibold text-center">AxoChat</h3>
+          <p class="text-sm text-gray-300">
+            Centralizamos todos os seus atendimentos para garantir rapidez e
+            eficiência, com um Chat-Bot inteligente e relatórios personalizados.
+          </p>
+        </div>
+      </div>
+
+      <!-- AxoVet Project -->
+      <div
+        class="group flex flex-col overflow-hidden rounded-xl bg-zinc-900 shadow-lg transition duration-300 ease-out transform hover:-translate-y-2 hover:shadow-2xl cursor-pointer"
+      >
+        <img
+          class="object-cover w-full h-48 group-hover:opacity-75"
+          src="~/assets/images/petus.png"
+          alt="AxoVet"
+        />
+        <div class="flex flex-col justify-between p-6 space-y-4">
+          <h3 class="text-2xl font-semibold text-center">AxoVet</h3>
+          <p class="text-sm text-gray-300">
+            O melhor ERP de gestão veterinária. Com a AxoVet, você gerencia toda
+            a sua empresa de forma integrada e eficiente.
+          </p>
+        </div>
+      </div>
+
+      <!-- AxoShop Project -->
+      <div
+        class="group flex flex-col overflow-hidden rounded-xl bg-zinc-900 shadow-lg transition duration-300 ease-out transform hover:-translate-y-2 hover:shadow-2xl cursor-pointer"
+      >
+        <img
+          class="object-cover w-full h-48 group-hover:opacity-75"
+          src="~/assets/images/axoshop.png"
+          alt="AxoShop"
+        />
+        <div class="flex flex-col justify-between p-6 space-y-4">
+          <h3 class="text-2xl font-semibold text-center">AxoShop</h3>
+          <p class="text-sm text-gray-300">
+            Transforme sua loja virtual com o AxoShop, o e-commerce
+            personalizável mais completo do mercado.
+          </p>
+        </div>
+      </div>
+
+      <!-- AxoBot Project -->
+      <div
+        class="group flex flex-col overflow-hidden rounded-xl bg-zinc-900 shadow-lg transition duration-300 ease-out transform hover:-translate-y-2 hover:shadow-2xl cursor-pointer"
+      >
+        <img
+          class="object-cover w-full h-48 group-hover:opacity-75"
+          src="~/assets/images/axobot.png"
+          alt="AxoBot"
+        />
+        <div class="flex flex-col justify-between p-6 space-y-4">
+          <h3 class="text-2xl font-semibold text-center">AxoBot</h3>
+          <p class="text-sm text-gray-300">
+            Introduzindo o AxoBot, a inteligência artificial definitiva para
+            otimizar suas operações diárias.
+          </p>
         </div>
       </div>
     </div>
