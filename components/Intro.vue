@@ -1,10 +1,10 @@
 <template>
-  <section class="mx-auto max-w-7xl p-6 py-16 md:py-24 lg:px-8" id="projects">
-    <div class="text-center">
+  <section class="container mx-auto px-4 py-24 text-white" id="projects">
+    <div class="text-center mb-16">
       <div class="text-4xl/[1.07] font-bold tracking-tight md:text-5xl/[1.07]">
         <span
           class="bg-gradient-to-br from-white to-zinc-500 bg-clip-text text-transparent"
-          >Conheça nossos <br />
+          >Conheça nossos
           <span
             class="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-purple-900"
           >
@@ -14,73 +14,75 @@
       </div>
     </div>
 
-    <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-6 lg:gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-6 lg:gap-8">
       <div
-        class="flex flex-col overflow-hidden rounded-2xl bg-zinc-900/50 ring-1 ring-zinc-100/10 hover:transform hover:scale-105 hover:transition duration-300 cursor-pointer"
+        v-for="project in projects"
+        :key="project.id"
+        class="group flex flex-col overflow-hidden rounded-xl bg-zinc-900 shadow-lg transition duration-300 ease-out transform hover:-translate-y-2 hover:shadow-2xl cursor-pointer"
       >
-        <img src="~/assets/images/axochat.png" class="mb-8">
-        <div class="w-full space-y-4 px-8 pb-8">
-          <h3 class="text-lg/none font-medium text-zinc-200 text-center">
-            AxoChat
+        <NuxtImg
+          class="object-cover w-full h-48 group-hover:opacity-75"
+          :src="project.imageUrl"
+          :alt="project.title"
+        />
+
+        <div class="flex flex-col justify-between p-6 space-y-4">
+          <h3 class="text-2xl font-semibold text-center">
+            {{ project.title }}
           </h3>
-          <p class="max-w-sm text-base text-zinc-400/80">
-            O sistema de atendimento multiplataforma mais eficiente do mercado.
-            Centralizamos todos os seus atendimentos para garantir rapidez e
-            eficiência aos seus clientes, oferecendo um Chat-Bot com
-            inteligência artifical, relatórios personalizados e diversas
-            ferramentas para elevar a qualidade do seu atendimento a um próximo
-            nível.
-          </p>
-        </div>
-      </div>
-      <div
-        class="flex flex-col overflow-hidden rounded-2xl bg-zinc-900/50 ring-1 ring-zinc-100/10 hover:transform hover:scale-105 hover:transition duration-300 cursor-pointer"
-      >
-        <img src="~/assets/images/petus.png" class="mb-8">
-        <div class="w-full space-y-4 px-8 pb-8">
-          <h3 class="text-lg/none font-medium text-zinc-200 text-center">
-            AxoVet
-          </h3>
-          <p class="max-w-sm text-base text-zinc-400/80">
-            O melhor ERP de gestão veterinária. Com a AxoVet, você gerencia toda
-            a sua empresa de forma integrada e eficiente. Além de cadastro de
-            clientes e animais egestão de atendimento, aproveite recursos como
-            dashboards gerados com I.A, emissão de notas fiscais, internação e
-            muitas outras funcionalidades. Eleve o nível de sua gestão com a
-            AxoVet.
-          </p>
-        </div>
-      </div>
-      <div
-        class="flex flex-col overflow-hidden rounded-2xl bg-zinc-900/50 ring-1 ring-zinc-100/10 hover:transform hover:scale-105 hover:transition duration-300 cursor-pointer"
-      >
-          <img src="~/assets/images/axoshop.png" class="mb-8">
-        <div class="mt-auto w-full space-y-4 px-8 pb-8">
-          <h3 class="text-lg/none font-medium text-zinc-200 text-center">
-            AxoShop
-          </h3>
-          <p class="max-w-sm text-base text-zinc-400/80">
-            AxoShop, o e-commerce personalizável mais completo do
-            mercado. Oferecemos uma solução completa para o seu comércio,
-            incluindo catálogo com filtros avançados, coleções personalizadas,
-            formulários de contato, lista de desejos, carrinho de compras e
-            módulo de pagamento integrado. Transforme sua loja virtual com o AxoShop.
-          </p>
-        </div>
-      </div>
-      <div
-        class="flex flex-col overflow-hidden rounded-2xl bg-zinc-900/50 ring-1 ring-zinc-100/10 hover:transform hover:scale-105 hover:transition duration-300 cursor-pointer"
-      >
-          <img src="~/assets/images/axobot.png" class="mb-8">
-        <div class="mt-auto w-full space-y-4 px-8 pb-8">
-          <h3 class="text-lg/none font-medium text-zinc-200 text-center">
-            AxoBot
-          </h3>
-          <p class="max-w-sm text-base text-zinc-400/80">
-            Introduzindo o AxoBot, a inteligência artificial definitiva para otimizar suas operações diárias. O AxoBot não é apenas um assistente virtual comum; é um parceiro de negócios que revoluciona a forma como você gerencia suas tarefas diárias. Podendo ser integrado em qualquer aplicativo, pode ser usado para responder seus clientes, gerar relatórios, analisar dados e montar estratégias de negócio completas!
-          </p>
+          <p class="text-sm text-gray-300">{{ project.description }}</p>
         </div>
       </div>
     </div>
   </section>
 </template>
+
+<script lang="ts">
+import { defineComponent } from "vue";
+
+export default defineComponent({
+  name: "ProjectsSection",
+  data() {
+    return {
+      projects: [
+        {
+          id: "axochat",
+          title: "AxoChat",
+          description:
+            "Centralizamos todos os seus atendimentos para garantir rapidez e eficiência, com um Chat-Bot inteligente e relatórios personalizados.",
+          imageUrl: "axochat.png",
+        },
+        {
+          id: "axovet",
+          title: "AxoVet",
+          description:
+            "O melhor ERP de gestão veterinária. Com a AxoVet, você gerencia toda a sua empresa de forma integrada e eficiente.",
+          imageUrl: "petus.png",
+        },
+        {
+          id: "axoshop",
+          title: "AxoShop",
+          description:
+            "Transforme sua loja virtual com o AxoShop, o e-commerce personalizável mais completo do mercado.",
+          imageUrl: "axoshop.png",
+        },
+        {
+          id: "axobot",
+          title: "AxoBot",
+          description:
+            "Introduzindo o AxoBot, a inteligência artificial definitiva para otimizar suas operações diárias.",
+          imageUrl: "axobot.png",
+        },
+        // Add more projects as needed
+      ] as Project[],
+    };
+  },
+});
+
+interface Project {
+  id: string;
+  title: string;
+  description: string;
+  imageUrl: string;
+}
+</script>
