@@ -1,7 +1,13 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ["@nuxt/image", "@nuxtjs/tailwindcss", "nuxt-particles", "nuxt-icon"],
+  modules: [
+    "@nuxt/image",
+    "@nuxtjs/tailwindcss",
+    "nuxt-particles",
+    "nuxt-icon",
+    "@nuxtjs/sitemap",
+  ],
 
   css: ["@/assets/main.css"],
 
@@ -9,4 +15,7 @@ export default defineNuxtConfig({
     dir: "assets/images",
   },
 
+  sitemap: {
+    hostname: "https://www.axolutions.com.br",
+  },
 });
