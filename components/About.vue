@@ -40,7 +40,7 @@
               />
               <div>
                 <p class="text-xl text-zinc-300 textAbout">
-                  A Axolutions é a consultoria líder em desenvolvimento de
+                  A Axolutions é aaaaaaaaaaaaaaaaaaa consultoria líder em desenvolvimento de
                   softwares inovadores, dedicada a fornecer soluções
                   personalizadas para impulsionar o crescimento da sua empresa.
                   Com experiência no mercado, construímos uma reputação sólida
