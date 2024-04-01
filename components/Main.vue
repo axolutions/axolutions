@@ -7,6 +7,7 @@
         <Hero />
         <About />
         <HowItWorks />
+
         <Intro />
         <Faq />
         <Newsletter />

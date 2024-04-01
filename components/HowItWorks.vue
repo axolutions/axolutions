@@ -1,5 +1,5 @@
 <template>
-  <section id="intro" class=" mx-auto max-w-7xl py-16 md:py-24 lg:px-8">
+  <section id="intro" class="mx-auto max-w-7xl py-16 md:py-24 lg:px-8">
     <div class="text-center">
       <div
         class="text-4xl/[1.07] font-bold tracking-tight md:text-5xl/[1.07] mb-20"
@@ -19,37 +19,40 @@
       <div class="container flex items-center justify-center">
         <div class="timeline relative">
           <ul class="text-white">
-            <li
-              class="rounded-lg bg-white-950 ring-1 ring-white/10 lg:rounded-2x p-5 mb-10"
-              :style="{ opacity: 1, backgroundColor: '#111317' }"
-            >
-              <div class="timeline-content">
-                <h1
-                  class="font-semibold text-2xl leading-7 mb-4 text-center text-purple-600"
-                  style="color: #bd9ad8"
-                >
-                  1. Entendemos suas necessidades
-                </h1>
-                <p>
-                  Nossa abordagem personalizada começa com uma profunda
-                  compreensão de suas metas e objetivos para garantir soluções
-                  sob medida que impulsionam o seu sucesso e aumentam sua
-                  relevância no mercado, melhorando seu ranking em mecanismos de
-                  buscas.
-                </p>
-              </div>
-              <div
-                class="absolute -bottom-2 left-20 h-2 w-20 md:w-32 lg:w-64"
-                :style="{
-                  maskImage:
-                    'linear-gradient(to right, rgba(217, 217, 217, 0) 0%, #d9d9d9 25%, #d9d9d9 75%, rgba(217, 217, 217, 0) 100%)',
-                }"
+            <div>
+              <li
+                class="rounded-lg ring-1 ring-white/10 lg:rounded-2x p-5 mb-10"
+                :style="{ opacity: 1, backgroundColor: '#111317' }"
               >
+                <div class="">
+                  <h1
+                    class="font-semibold text-2xl leading-7 mb-4 text-center text-purple-600"
+                    style="color: #bd9ad8"
+                  >
+                    1. Entendemos suas necessidades
+                  </h1>
+                  <p>
+                    Nossa abordagem personalizada começa com uma profunda
+                    compreensão de suas metas e objetivos para garantir soluções
+                    sob medida que impulsionam o seu sucesso e aumentam sua
+                    relevância no mercado, melhorando seu ranking em mecanismos
+                    de buscas.
+                  </p>
+                </div>
                 <div
-                  class="h-px w-full bg-gradient-to-r from-violet-400/0 via-violet-400 to-violet-400/0"
-                />
-              </div>
-            </li>
+                  class="absolute -bottom-2 left-20 h-2 w-20 md:w-32 lg:w-64"
+                  :style="{
+                    maskImage:
+                      'linear-gradient(to right, rgba(217, 217, 217, 0) 0%, #d9d9d9 25%, #d9d9d9 75%, rgba(217, 217, 217, 0) 100%)',
+                  }"
+                >
+                  <div
+                    class="h-px w-full bg-gradient-to-r from-violet-400/0 via-violet-400 to-violet-400/0"
+                  />
+                </div>
+              </li>
+              <h1>AAAAAAAAAAAA</h1>
+            </div>
             <li
               class="rounded-md bg-white-950 ring-1 ring-white/10 lg:rounded-2xl p-5 mb-10"
               :style="{ opacity: 1, backgroundColor: '#111317' }"
@@ -146,62 +149,11 @@
     </div>
   </section>
 
-  <div class="section-banner">
-</div>
-
+  <div class="section-banner"></div>
 </template>
 
 <style scoped>
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.timeline {
-  position: relative;
-}
-
-.timeline ul {
-  list-style: none;
-}
-.timeline ul li {
-  padding: 20px;
-  color: white;
-  border-radius: 10px;
-  margin-bottom: 40px;
-}
-.timeline ul li:last-child {
-  margin-bottom: 0;
-}
-.timeline-content h1 {
-  font-weight: 500;
-  font-size: 25px;
-  line-height: 30px;
-  margin-bottom: 10px;
-   text-align: center;
-    margin-bottom: 1em;
-    color: #bd9ad8;
-    font-weight: bold;
-}
-
-.timeline-content .date {
-  font-size: 12px;
-  font-weight: 300;
-  margin-bottom: 10px;
-  letter-spacing: 2px;
-}
 @media only screen and (min-width: 880px) {
-  .timeline-content h1 {
-    font-size: 28px;
-    text-align: center;
-    margin-bottom: 1em;
-    color: #bd9ad8;
-    font-weight: bold;
-  }
-
-  .timeline-content p {
-    font-size: 20px;
-  }
   .timeline:before {
     content: "";
     position: absolute;
@@ -212,6 +164,7 @@
     height: 100%;
     background-color: #8f8f8f;
   }
+
   .timeline ul li {
     padding: 40px;
     width: 50%;

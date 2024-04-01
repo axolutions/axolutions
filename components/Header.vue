@@ -12,7 +12,7 @@
             <img src="~/assets/images/logo.png" class="h-14 hidden sm:block" />
           </div>
           <div
-            class="flex flex-1 items-center justify-end space-x-4 text-sm font-medium text-zinc-300 transition hover:text-zinc-100 sm:space-x-6"
+            class="flex flex-1 items-center justify-end space-x-4 text-sm font-medium text-zinc-300 transition sm:space-x-6"
           >
             <a href="#projects">Projetos</a>
             <button
