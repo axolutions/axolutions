@@ -1,11 +1,8 @@
 <template>
   <div class="overflow-clip">
     <Header />
-
     <Main />
   </div>
-
-  <Footer />
 </template>
 
 <script setup lang="ts">

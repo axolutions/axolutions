@@ -1,14 +1,14 @@
 <template>
-  <section id="faq" class="container mx-auto px-4 py-24 sm:py-32 text-white">
+  <section id="faq" class=" mx-auto px-4 py-24 sm:py-32 text-white">
     <div class="text-center mb-12">
       <h2
-        class="text-4xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 md:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-purple-900"
+        class="text-4xl pb-4 font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 md:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-purple-900"
       >
         Perguntas Frequentes
       </h2>
     </div>
 
-    <div class="max-w-4xl mx-auto">
+    <div class=" mx-auto">
       <ul>
         <li v-for="(faq, index) in faqs" :key="index" class="mb-4">
           <button

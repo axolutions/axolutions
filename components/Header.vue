@@ -1,7 +1,7 @@
 <template>
   <header class="absolute inset-x-0 top-0 z-10 mt-2">
     <div class="relative flex justify-center">
-      <div class="mx-4 w-full max-w-7xl">
+      <div class="mx-4 w-full">
         <nav
           class="flex min-h-[1rem] items-center justify-between"
           aria-label="Global"

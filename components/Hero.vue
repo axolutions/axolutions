@@ -9,10 +9,12 @@
       >
         A solução ideal para sua empresa:
         <br />
+        <div class="animacao">
         <span
-          class="inline bg-gradient-to-r from-[#b970db] via-[#d456f7] to-[#8d23aa] bg-clip-text"
+          class="inline bg-gradient-to-r from-[#9611FF] via-[#d456f7] to-[#9611FF] bg-clip-text"
           >Axolutions
         </span>
+        </div>
       </h1>
 
       <p
@@ -78,7 +80,7 @@
       <NuxtParticles
         id="tsparticles"
         :options="options"
-        class="pointer-events-none absolute  left-1/2 h-[32rem] w-full -translate-x-1/2 -translate-y-1/2 overflow-hidden w-[60rem] "
+        class="pointer-events-none absolute  left-1/2  w-full -translate-x-1/2 -translate-y-1/2 overflow-hidden "
         @load="onLoad"
       />
     </div>
@@ -88,14 +90,14 @@
 <script setup lang="ts">
 import { Container } from "tsparticles-engine";
 const options = ref({
-  fpsLimit: 30,
+  fpsLimit: 40,
   interactivity: {
     modes: {
       push: { quantity: 8 },
     },
   },
   particles: {
-    color: { value: "#ffffff" },
+    color: { value: "#a3a0a0" },
     number: {
       density: {
         enable: true,
@@ -113,12 +115,12 @@ const options = ref({
       type: "circle",
     },
     size: {
-      value: { min: 1.5, max: 1.9 },
+      value: { min: 0.9, max: 1.7 },
     },
     move: {
-      direction: "top",
+      direction: "bottom",
       enable: true,
-      speed: 2, // Increased speed for faster particle movement
+      speed: 1, // Increased speed for faster particle movement
     },
   },
 });
@@ -126,9 +128,12 @@ const options = ref({
 const onLoad = (container: Container) => {
   container.play();
 };
+
+
 </script>
 
 <style>
+
 @media only screen and (max-width: 767px) {
   .hero {
     height: 90vh !important;
@@ -136,10 +141,11 @@ const onLoad = (container: Container) => {
 }
 .hero {
   height: 100vh;
+  overflow: hidden;
 }
 
 #tsparticles {
-  height: 80vh;
+  height: 200%;
 }
 
 /* Define the keyframes for the fadeIn animation */

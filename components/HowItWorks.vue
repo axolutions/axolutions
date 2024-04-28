@@ -1,5 +1,5 @@
 <template>
-  <section id="intro" class="mx-auto max-w-7xl py-16 md:py-24 lg:px-8">
+  <section id="intro" class="py-24 lg:px-8">
     <div class="text-center">
       <div
         class="text-4xl/[1.07] font-bold tracking-tight md:text-5xl/[1.07] mb-20"
@@ -16,7 +16,7 @@
       </div>
     </div>
     <div class="flex justify-center">
-      <div class="container flex items-center justify-center">
+      <div class="containere flex items-center justify-center">
         <div class="timeline relative">
           <ul class="text-white">
             <div>

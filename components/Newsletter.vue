@@ -1,8 +1,8 @@
 <template>
-  <section class="relative mx-auto mt-16 max-w-full p-6 pt-20 lg:px-8">
+  <section class="relative mt-16 max-w-full p-6 pt-20 min-w-full">
     <div
       aria-hidden="true"
-      class="user-select-none center pointer-events-none absolute -top-0.5 left-1/2 h-px w-4/5 max-w-[500px] -translate-x-1/2 -translate-y-1/2 transform-gpu bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(148,0,211,0.6)_0%,rgba(75,0,130,0)_75%)]"
+      class="user-select-none center pointer-events-none absolute -top-0.5 left-1/2 h-px translate-x-1/2 -translate-y-1/2 transform-gpu bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(148,0,211,0.6)_0%,rgba(75,0,130,0)_75%)]"
     ></div>
     <div
       aria-hidden="true"
@@ -69,7 +69,7 @@
         <p class="mx-auto mt-6 max-w-xl text-lg text-zinc-300">
           Fale conosco agora mesmo! Teremos prazer em responder suas dúvidas.
         </p>
-        <div class="mt-12 flex items-center justify-center">
+        <div class="mt-12 min-w-1200">
           <button
             class="group relative rounded-full p-px text-sm/6 text-zinc-400 duration-300 hover:text-zinc-100 hover:shadow-glow"
             type="button"
@@ -103,7 +103,7 @@
     </div>
   </section>
 
-  <footer class="isolate mx-auto max-w-7xl pt-16 lg:px-8">
+  <footer class="isolate mx-auto pt-16">
     <div
       class="border-t border-white/10 pt-4 md:flex md:items-center md:justify-between"
     >

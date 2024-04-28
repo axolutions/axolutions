@@ -1,5 +1,5 @@
 <template>
-  <section class="container mx-auto px-4 py-24 text-white" id="projects">
+  <section class="mx-auto px-4 py-24 text-white" id="projects">
     <div class="text-center mb-16">
       <div class="text-4xl/[1.07] font-bold tracking-tight md:text-5xl/[1.07]">
         <span
@@ -89,6 +89,8 @@
     </div>
   </section>
 </template>
+
+
 
 <script lang="ts">
 import { defineComponent } from "vue";

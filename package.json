@@ -28,6 +28,7 @@
     "@nuxtjs/vuetify": "^1.12.3",
     "@pinia/nuxt": "^0.5.1",
     "pinia": "^2.1.7",
+    "postcss-custom-properties": "^13.3.6",
     "tsparticles-engine": "^2.12.0"
   }
 }
