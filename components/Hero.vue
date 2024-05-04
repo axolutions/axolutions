@@ -10,10 +10,10 @@
         A solução ideal para sua empresa:
         <br />
         <div class="animacao">
-        <span
-          class="inline bg-gradient-to-r from-[#9611FF] via-[#d456f7] to-[#9611FF] bg-clip-text"
-          >Axolutions
-        </span>
+          <span
+            class="inline bg-gradient-to-r from-[#9611FF] via-[#d456f7] to-[#9611FF] bg-clip-text"
+            >Axolutions
+          </span>
         </div>
       </h1>
 
@@ -26,14 +26,9 @@
       <div class="mt-10 flex flex-col items-center justify-center gap-y-8">
         <div style="opacity: 1">
           <button
-            class="group relative rounded-full p-px text-sm/6 text-zinc-300 duration-300 hover:text-zinc-100 hover:shadow-glow"
+            class="glow-on-hover group relative rounded-full p-px text-sm/6 text-zinc-300 duration-300 hover:text-zinc-100 hover:shadow-glow"
             type="button"
           >
-            <span class="absolute inset-0 overflow-hidden rounded-full">
-              <span
-                class="absolute inset-0 rounded-full bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(148,0,211,0.6)_0%,rgba(75,0,130,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100"
-              ></span>
-            </span>
             <div
               class="relative z-10 rounded-full bg-zinc-950 px-4 py-1.5 ring-1 ring-white/10 text-lg"
             >
@@ -50,6 +45,7 @@
             ></span>
           </button>
         </div>
+
         <div class="group hidden sm:block" style="opacity: 1">
           <a class="flex flex-col items-center gap-1" href="/#intro"
             ><p
@@ -80,7 +76,7 @@
       <NuxtParticles
         id="tsparticles"
         :options="options"
-        class="pointer-events-none absolute  left-1/2  w-full -translate-x-1/2 -translate-y-1/2 overflow-hidden "
+        class="pointer-events-none absolute left-1/2 w-full -translate-x-1/2 -translate-y-1/2 overflow-hidden"
         @load="onLoad"
       />
     </div>
@@ -128,19 +124,20 @@ const options = ref({
 const onLoad = (container: Container) => {
   container.play();
 };
-
-
 </script>
 
 <style>
-
-@media only screen and (max-width: 767px) {
-  .hero {
-    height: 90vh !important;
+@media only screen and (min-width: 800px) {
+  .hero{
+    height: 100vh !important;
   }
+
 }
 .hero {
-  height: 100vh;
+  height: 85vh;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   overflow: hidden;
 }
 

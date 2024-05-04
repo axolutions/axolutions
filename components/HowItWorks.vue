@@ -51,7 +51,7 @@
                   />
                 </div>
               </li>
-              <h1>AAAAAAAAAAAA</h1>
+              <h1></h1>
             </div>
             <li
               class="rounded-md bg-white-950 ring-1 ring-white/10 lg:rounded-2xl p-5 mb-10"
