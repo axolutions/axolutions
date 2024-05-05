@@ -1,9 +1,21 @@
 <template>
   <div class="relative bg-zync-500">
     <div
-      class="rounded-md bg-white-950 ring-1 ring-white/10 lg:rounded-2xl text-purple from-white to-white bg-zync-500"
+      class="bg-white-950 ring-1 ring-white/10 rounded-2xl text-purple from-white to-white bg-zync-500 overflow-hidden relative"
       :style="{ opacity: 1, backgroundColor: '#111317' }"
     >
+      <span
+        class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent to-purple-600 animate-slideRight"
+      ></span>
+      <span
+        class="absolute top-0 right-0 w-1 h-full bg-gradient-to-b from-transparent to-purple-600 animate-slideDown delay-1000"
+      ></span>
+      <span
+        class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-l from-transparent to-purple-600 animate-slideLeft"
+      ></span>
+      <span
+        class="absolute top-0 left-0 w-1 h-full bg-gradient-to-t from-transparent to-purple-600 animate-slideUp delay-1000"
+      ></span>
       <div class="bg-muted/50 rounded-lg py-12">
         <div
           class="px-6 flex flex-col-reverse justify-center md:flex-row gap-8 md:gap-12"
@@ -40,12 +52,11 @@
               />
               <div>
                 <p class="text-xl text-zinc-300 textAbout">
-                  A Axolutions é a startup líder em desenvolvimento de
-                  softwares inovadores, dedicada a fornecer soluções
-                  personalizadas para impulsionar o crescimento da sua empresa.
-                  Com experiência no mercado, construímos uma reputação sólida
-                  pela excelência dos nossos sistemas e pelo compromisso com a
-                  sua satisfação.
+                  A Axolutions é a startup líder em desenvolvimento de softwares
+                  inovadores, dedicada a fornecer soluções personalizadas para
+                  impulsionar o crescimento da sua empresa. Com experiência no
+                  mercado, construímos uma reputação sólida pela excelência dos
+                  nossos sistemas e pelo compromisso com a sua satisfação.
                 </p>
                 <br />
                 <div v-if="showMore">
@@ -123,20 +134,39 @@
                   class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-zinc-200"
                 >
                   <div class="space-y-2 text-center">
-                    <h2 class="text-3xl sm:text-4xl font-bold">2.7K+</h2>
+                    <h2
+                      class="contador text-3xl sm:text-4xl font-bold"
+                      data-valor-final="2700"
+                    >
+                      2.7K+
+                    </h2>
                     <p class="text-xl text-muted-foreground">Usuários</p>
                   </div>
                   <div class="space-y-2 text-center">
-                    <h2 class="text-3xl sm:text-4xl font-bold">57</h2>
+                    <h2
+                      class="contador text-3xl sm:text-4xl font-bold"
+                      data-valor-final="57"
+                    >
+                      57
+                    </h2>
                     <p class="text-xl text-muted-foreground">Clientes</p>
                   </div>
                   <div class="space-y-2 text-center">
-                    <h2 class="text-3xl sm:text-4xl font-bold">16</h2>
-
+                    <h2
+                      class="contador text-3xl sm:text-4xl font-bold"
+                      data-valor-final="16"
+                    >
+                      16
+                    </h2>
                     <p class="text-xl text-muted-foreground">Colaboradores</p>
                   </div>
                   <div class="space-y-2 text-center">
-                    <h2 class="text-3xl sm:text-4xl font-bold">62</h2>
+                    <h2
+                      class="contador text-3xl sm:text-4xl font-bold"
+                      data-valor-final="62"
+                    >
+                      62
+                    </h2>
                     <p class="text-xl text-muted-foreground">Projetos</p>
                   </div>
                 </div>
@@ -167,6 +197,60 @@ export default {
       showMore: false,
     };
   },
+  mounted() {
+    if (typeof document !== "undefined") {
+      const observer = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              this.startCountAnimation();
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          rootMargin: "0px",
+          threshold: 0.1,
+        }
+      );
+
+      const elements = document.querySelectorAll(".contador");
+      elements.forEach((element) => {
+        observer.observe(element);
+      });
+    }
+  },
+  methods: {
+    startCountAnimation() {
+      function animateCounter(
+        element,
+        finalValue,
+        interval,
+        duration,
+        startTime
+      ) {
+        const elapsedTime = Date.now() - startTime;
+        if (elapsedTime >= duration) {
+          element.textContent = finalValue.toLocaleString();
+          return;
+        }
+        const currentValue = Math.floor((finalValue / duration) * elapsedTime);
+        element.textContent = currentValue.toLocaleString();
+        setTimeout(() => {
+          animateCounter(element, finalValue, interval, duration, startTime);
+        }, interval);
+      }
+
+      const elements = document.querySelectorAll(".contador");
+      elements.forEach((element) => {
+        const finalValue = parseInt(element.getAttribute("data-valor-final"));
+        const interval = 1;
+        const duration = 2000;
+        const startTime = Date.now();
+        animateCounter(element, finalValue, interval, duration, startTime);
+      });
+    },
+  },
 };
 </script>
 
@@ -182,5 +266,65 @@ export default {
   #statistics {
     margin-bottom: 2rem;
   }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.animate-slideRight {
+  animation: slideRight 4s linear infinite;
+}
+
+.animate-slideDown {
+  animation: slideDown 4s linear infinite;
+}
+
+.animate-slideLeft {
+  animation: slideLeft 4s linear infinite;
+}
+
+.animate-slideUp {
+  animation: slideUp 4s linear infinite;
+}
+
+.delay-800 {
+  animation-delay: 1.6s;
+}
+
+.delay-1000 {
+  animation-delay: 2s;
 }
 </style>
