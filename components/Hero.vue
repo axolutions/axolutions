@@ -1,10 +1,10 @@
 <template>
-  <div class="relative text-center hero">
+  <div class="relative hero text-center">
     <div
-      class="relative text-center hero flex flex-col items-center justify-center"
+      class="relative text-center hero flex flex-col items-center justify-center min-w-full"
     >
       <h1
-        class="bg-gradient-to-br from-white to-zinc-300 bg-clip-text text-5xl/[1.07] font-bold tracking-tight text-transparent md:text-7xl/[1.07]"
+        class="bg-gradient-to-br from-white to-zinc-300 bg-clip-text text-5xl/[1.07] font-bold tracking-tight text-transparent md:text-7xl/[1.08] titulo"
         style="transform: none"
       >
         A solução ideal para sua empresa:
@@ -139,6 +139,13 @@ const onLoad = (container: Container) => {
   align-items: center !important;
   justify-content: center !important;
   overflow: hidden;
+}
+
+
+@media only screen and (min-width: 1250px){
+.titulo {
+  font-size: 4.8rem;
+}
 }
 
 #tsparticles {
