@@ -176,17 +176,6 @@
         </div>
       </div>
     </div>
-    <div
-      class="absolute -bottom-2 left-20 h-2 w-20 md:w-32 lg:w-64"
-      :style="{
-        maskImage:
-          'linear-gradient(to right, rgba(217, 217, 217, 0) 0%, #d9d9d9 25%, #d9d9d9 75%, rgba(217, 217, 217, 0) 100%)',
-      }"
-    >
-      <div
-        class="h-px w-full bg-gradient-to-r from-violet-400/0 via-violet-400 to-violet-400/0"
-      />
-    </div>
   </div>
 </template>
 

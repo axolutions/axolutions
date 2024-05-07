@@ -197,7 +197,8 @@ axolutions
             <div
               class="absolute inset-0 -z-10 h-full w-full text-zinc-300/10 [mask:linear-gradient(black,black_60%,transparent)]"
             >
-              <svg class="h-full w-full" aria-hidden="true">
+
+              class="h-full w-full" aria-hidden="true">
                 <defs>
                   <pattern
                     id="genius-pattern"

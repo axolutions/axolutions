@@ -1,9 +1,9 @@
 <template>
   <header class="absolute inset-x-0 top-0 z-10 mt-2">
     <div class="relative flex justify-center">
-      <div class="mx-4 w-full">
+      <div class="mx-8 w-full">
         <nav
-          class="flex min-h-[1rem] items-center justify-between"
+          class="flex min-h-[1rem] items-top justify-between"
           aria-label="Global"
         >
           <div class="flex lg:flex-1">
@@ -11,7 +11,7 @@
               <img src="~/assets/images/ra.png" class="h-14 sm:hidden" />
               <img
                 src="~/assets/images/logo.png"
-                class="h-14 hidden sm:block"
+                class="h-14 hidden sm:block pt-2"
               />
             </a>
           </div>
