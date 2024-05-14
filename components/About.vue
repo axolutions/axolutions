@@ -1,5 +1,5 @@
 <template>
-  <div class="relative bg-zync-500">
+  <div class="relative mx-auto bg-zync-500 container">
     <div
       class="bg-white-950 ring-1 ring-white/10 rounded-2xl text-purple from-white to-white bg-zync-500 overflow-hidden relative"
       :style="{ opacity: 1, backgroundColor: '#111317' }"
@@ -53,20 +53,16 @@
               <div>
                 <p class="text-xl text-zinc-300 textAbout">
                   A Axolutions é a startup líder em desenvolvimento de softwares
-                  inovadores, dedicada a fornecer soluções personalizadas para
-                  impulsionar o crescimento da sua empresa. Com experiência no
-                  mercado, construímos uma reputação sólida pela excelência dos
-                  nossos sistemas e pelo compromisso com a sua satisfação.
+                  inovadores, fornecendo soluções únicas para impulsionar o seu
+                  crescimento. Construímos uma reputação sólida pela excelência
+                  dos nossos sistemas.
                 </p>
                 <br />
                 <div v-if="showMore">
                   <p class="text-xl text-zinc-300 mt-2 textAbout">
                     Durante nossa história impulsionamos a trajetória de outras
                     57 empresas, e nossos projetos são testemunho do nosso
-                    compromisso com a qualidade e inovação. Com a Axolutions,
-                    você terá a disposição uma equipe de 16 colaboradores
-                    apaixonados e qualificados para desenvolver o melhor
-                    software para a sua empresa.
+                    compromisso com a qualidade e inovação.
                   </p>
                   <br />
                   <p class="text-xl text-zinc-300 mt-2 textAbout">

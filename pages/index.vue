@@ -2,7 +2,6 @@
   <div class="overflow-clip">
     <Header />
     <Main />
-    that attract my most sinful instincts
   </div>
 </template>
 

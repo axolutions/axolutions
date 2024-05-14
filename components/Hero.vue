@@ -4,7 +4,7 @@
       class="relative text-center hero flex flex-col items-center justify-center min-w-full"
     >
       <h1
-        class="bg-gradient-to-br from-white to-zinc-300 bg-clip-text text-5xl/[1.07] font-bold tracking-tight text-transparent md:text-7xl/[1.08] titulo"
+        class="bg-gradient-to-br from-white to-zinc-300 bg-clip-text text-5xl/[1.07] font-bold tracking-tight text-transparent md:text-7xl/[1.0] "
         style="transform: none"
       >
         A solução ideal para sua empresa:
