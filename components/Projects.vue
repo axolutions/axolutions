@@ -20,25 +20,28 @@
           :key="index"
           class="w-full mx-auto group sm:max-w-sm"
         >
-          <div
-            class="group flex flex-col overflow-hidden rounded-xl bg-zinc-900 shadow-lg transition duration-300 ease-out transform hover:-translate-y-2 hover:shadow-2xl cursor-pointer"
-          >
-            <a :href="post.href">
+          <a :href="post.href" class="block">
+            <div
+              class="flex flex-col h-full group overflow-hidden rounded-xl bg-zinc-900 shadow-lg transition duration-300 ease-out transform hover:-translate-y-2 hover:shadow-2xl cursor-pointer"
+            >
               <img
                 :src="post.img"
                 loading="lazy"
                 :alt="post.title"
-                class="w-full rounded-lg group-hover:opacity-75"
+                class="w-full h-48 object-cover rounded-t-lg group-hover:opacity-75"
               />
-              <div class="flex flex-col justify-between p-6 space-y-4">
-                <h3 class="text-2xl font-semibold text-center">AxoVet</h3>
+              <div
+                class="flex flex-col justify-between p-6 space-y-4 flex-grow"
+              >
+                <h3 class="text-2xl font-semibold text-center">
+                  {{ post.title }}
+                </h3>
                 <p class="text-sm text-gray-300">
-                  O melhor ERP de gestão veterinária. Com a AxoVet, você
-                  gerencia toda a sua empresa de forma integrada e eficiente.
+                  {{ post.desc }}
                 </p>
               </div>
-            </a>
-          </div>
+            </div>
+          </a>
         </li>
       </ul>
     </div>
@@ -56,30 +59,28 @@ export default {
     return {
       posts: [
         {
-          title: "What is SaaS? Software as a Service Explained",
-          desc: "Going into this journey, I had a standard therapy regimen, based on looking at the research literature. After I saw the movie, I started to ask other people.",
+          title: "AxoChat",
+          desc: "Centralizamos todos os seus atendimentos para maximizar sua eficiência, com um Chat-Bot com I.A integrada, relatórios personalizados e diversas funcionalidades para melhor atender o seu cliente.",
           img: axoChat,
-          date: "Jan 4 2022",
+
           href: "javascript:void(0)",
         },
         {
-          title: "A Quick Guide to WordPress Hosting",
-          desc: "According to him, “I'm still surprised that this has happened. But we are surprised because we are so surprised.” More revelations.",
+          title: "AxoVet",
+          desc: "ERP completo de gestão veterinária. A AxoVet proporciona uma interface intuitiva e as melhores ferramentas para você gerenciar toda a sua empresa de forma integrada e eficiente.",
           img: petus,
-          date: "Jan 4 2022",
           href: "javascript:void(0)",
         },
         {
-          title: "7 Promising VS Code Extensions Introduced in 2022",
-          desc: "I hope I remembered all the stuff that they needed to know. They're like, 'okay,' and write it in their little reading notebooks.",
+          title: "AxoShop",
+          desc: "Transforme sua loja virtual com o AxoShop, o e-commerce personalizável mais completo do mercado. Com S.E.O otimizado e todas as melhores funcionalidades para maximizar suas vendas.",
           img: axoShop,
           href: "javascript:void(0)",
         },
         {
-          title: "How to Use Root C++ Interpreter Shell to Write C++ Programs",
-          desc: "The powerful gravity waves resulting from the impact of the planets' moons — four in total — were finally resolved in 2015 when gravitational.",
+          title: "AxoBot",
+          desc: "Introduzindo o AxoBot, a inteligência artificial definitiva para otimizar suas operações diárias. Gestão de dívidas, reuniões, pagamentos, atendimento. Um segundo cérebro pensando por você.",
           img: axoBot,
-          date: "Jan 4 2022",
           href: "javascript:void(0)",
         },
       ],
