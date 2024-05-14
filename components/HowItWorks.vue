@@ -148,8 +148,6 @@
       </div>
     </div>
   </section>
-
-  <div class="section-banner"></div>
 </template>
 
 <style scoped>
