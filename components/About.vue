@@ -1,7 +1,7 @@
 <template>
   <div class="relative mx-auto bg-zync-500 container">
     <div
-      class="bg-white-950 ring-1 ring-white/10 rounded-2xl text-purple from-white to-white bg-zync-500 overflow-hidden relative"
+      class="bg-white-950 ring-1 ring-white/10 rounded-md text-purple from-white to-white bg-zync-500 overflow-hidden relative"
       :style="{ opacity: 1, backgroundColor: '#111317' }"
     >
       <span

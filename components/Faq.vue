@@ -62,15 +62,15 @@ export default {
       activeIndex: null,
       faqs: [
         {
-          question: "De que maneira a Axolutions pode beneficiar meu negócio?",
+          question: "Como a Axolutions poderia impulsionar minhas vendas?",
           answer:
-            "Nossos produtos, são desenvolvidos para simplificar operações, aumentar a produtividade e melhorar a experiência do cliente, ajudando você a alcançar seus objetivos de negócios de forma eficaz.",
+            "Nossos produtos são desenvolvidos para simplificar operações, aumentar a produtividade e melhorar a experiência do seu cliente. A Axolutions disponibiliza uma equipe de desenvolvimento para você, gerando desde landing-pages de alta conversão e otimizar o seu SEO, até entregar um software personalizado completo para a gestão do seu negócio.",
         },
         {
           question:
-            "Como a Axolutions protege meus dados e informações comerciais?",
+            "Quanto tempo leva para uma solução ser desenvolvida?",
           answer:
-            "A segurança dos dados dos nossos clientes é uma prioridade nossa. Implementamos medidas rigorosas de segurança, incluindo criptografia avançada, autenticação de dois fatores e práticas de segurança líderes do setor para garantir a proteção total de suas informações comerciais confidenciais.",
+            "O tempo necessário para desenvolver um software personalizado pode variar dependendo da complexidade do projeto e das suas necessidades específicas. Após compreendermos seus requisitos, forneceremos uma estimativa de prazo detalhada. Em geral de 5 dias a 1 mês.",
         },
         {
           question:
@@ -80,9 +80,9 @@ export default {
         },
         {
           question:
-            "Como posso contratar a Axolutions para um projeto específico?",
+            "Como posso solicitar um orçamento?",
           answer:
-            "Para discutir um projeto específico e explorar como a Axolutions pode ajudar sua empresa, entre em contato conosco através do nosso número ou redes sociais. Nossa equipe terá prazer em entender suas necessidades e fornecer uma solução personalizada que atenda aos seus requisitos.",
+            "Para solicitar um orçamento e explorar como a Axolutions pode ajudar sua empresa, entre em contato conosco através do nosso número ou redes sociais. Nossa equipe terá prazer em entender suas necessidades e fornecer uma solução personalizada que atenda aos seus requisitos.",
         },
         {
           question:

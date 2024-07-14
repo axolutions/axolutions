@@ -1,7 +1,12 @@
 <template>
-  <section class="flex min-h-screen flex-col justify-center text-white">
+  <section class="flex min-h-screen flex-col justify-center text-white mt-32">
+    <div class="relative mx-auto bg-zync-500 container ">
+    <div
+      class="bg-white-950 ring-1 ring-white/10 rounded-md text-purple from-white to-white bg-zync-500 overflow-hidden relative p-10"
+      :style="{ opacity: 1, backgroundColor: '#111317' }"
+    >
     <div class="w-full">
-      <div class="container mx-auto mt-32 mb-0 flex flex-col items-center ">
+      <div class="container mx-auto mb-0 flex flex-col items-center ">
         <div class="text-center">
           <div
             class="text-4xl/[1.07] font-bold tracking-tight md:text-5xl/[1.07] mb-20"
@@ -125,6 +130,8 @@
           </div>
         </div>
       </div>
+    </div>
+    </div>
     </div>
   </section>
 </template>
