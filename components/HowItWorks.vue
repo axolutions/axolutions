@@ -1,9 +1,9 @@
 <template>
-  <section class="flex min-h-screen flex-col justify-center text-white mt-32">
-    <div class="relative mx-auto bg-zync-500 container ">
+  <section class="flex min-h-screen flex-col justify-center text-white mt-32 lg:mt-0">
+    <div class="relative mx-auto lg:bg-zync-500 lg:container ">
     <div
-      class="bg-white-950 ring-1 ring-white/10 rounded-md text-purple from-white to-white bg-zync-500 overflow-hidden relative p-10"
-      :style="{ opacity: 1, backgroundColor: '#111317' }"
+      class="lg:bg-white-950 lg:ring-1 lg:ring-white/10 lg:rounded-md lg:text-purple from-white to-white lg:bg-zync-500 overflow-hidden lg:relative p-10 fundo"
+      :style="{ opacity: 1,}"
     >
     <div class="w-full">
       <div class="container mx-auto mb-0 flex flex-col items-center ">
@@ -137,52 +137,9 @@
 </template>
 
 <style scoped>
-@media only screen and (min-width: 880px) {
-  .timeline:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 2px;
-    height: 100%;
-    background-color: #8f8f8f;
-  }
-
-  .timeline ul li {
-    padding: 40px;
-    width: 50%;
-    position: relative;
-    margin-bottom: 20px;
-  }
-  .timeline ul li:nth-child(odd) {
-    float: left;
-    clear: right;
-    transform: translateX(-30px);
-    border-radius: 20px 0px 20px 20px;
-  }
-  .timeline ul li:nth-child(even) {
-    float: right;
-    clear: left;
-    transform: translateX(30px);
-    border-radius: 0px 20px 20px 20px;
-  }
-  .timeline ul li::before {
-    content: "";
-    position: absolute;
-    height: 18px;
-    width: 18px;
-    border-radius: 50%;
-    background-color: #8f61b3;
-    top: 0px;
-  }
-  .timeline ul li:nth-child(odd)::before {
-    transform: translate(50%, -50%);
-    right: -30px;
-  }
-  .timeline ul li:nth-child(even)::before {
-    transform: translate(-50%, -50%);
-    left: -30px;
+@media only screen and (min-width: 1024px) {
+  .fundo {
+    background-color: #111317; 
   }
 }
 </style>
