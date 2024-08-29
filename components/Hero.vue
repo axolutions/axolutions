@@ -12,7 +12,7 @@
         <div class="animacao">
           <span
             class="inline bg-gradient-to-r from-[#9611FF] via-[#d456f7] to-[#9611FF] bg-clip-text"
-            > Dev Evolutions
+            > Axolutions
           </span>
         </div>
       </h1>
