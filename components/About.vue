@@ -152,7 +152,7 @@
                       class="contador text-3xl sm:text-4xl font-bold"
                       data-valor-final="16"
                     >
-                      16
+                      17
                     </h2>
                     <p class="text-xl text-muted-foreground">Colaboradores</p>
                   </div>
